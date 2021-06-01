@@ -27,7 +27,7 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/next"
         android:textSize="20sp"
-        app:backgroundTint="#B51818"
+        app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
