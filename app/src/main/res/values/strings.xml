@@ -11,4 +11,16 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_third_fragment">Das ist ne neue Seite!</string>
     <string name="textViewDefault">Blallalalalalalal</string>
+
+<!--Gallery Stings-->
+    <string name="galerie">Galerie</string>
+    <string name="menu">Menu</string>
+    <string name="kriegsjahre">Kriegsjahre</string>
+    <string name="st_alban_in_der_kunst">St. Alban in der Kunst</string>
+    <string name="st_alban_damals">St. Alban damals</string>
+    <string name="st_alban_heute">St. Alban heute</string>
+    <string name="startseite">Startseite</string>
+    <string name="tour">Tour</string>
+    <string name="zeitstrahl">Zeitstrahl</string>
+    <string name="ber_uns">Impressum</string>
 </resources>
