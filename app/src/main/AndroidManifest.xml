@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StAlban_App">
-        <activity
+        <!--<activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
@@ -18,6 +18,21 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".sta_gallery.sta_gallery_activity"
+            android:label="Galerie"
+            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sta_gallery.sta_gallery_activity_war"
+            android:label ="Galerie_Kriegsjahre"
+            android:theme="@style/Theme.StAlban_App.NoActionBar">
         </activity>
         <meta-data
             android:name="preloaded_fonts"
