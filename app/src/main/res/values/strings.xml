@@ -14,13 +14,17 @@
 
 <!--Gallery Stings-->
     <string name="galerie">Galerie</string>
-    <string name="menu">Menu</string>
+    <string name="menu">Wo soll es hingehen?</string>
     <string name="kriegsjahre">Kriegsjahre</string>
     <string name="st_alban_in_der_kunst">St. Alban in der Kunst</string>
     <string name="st_alban_damals">St. Alban damals</string>
     <string name="st_alban_heute">St. Alban heute</string>
-    <string name="startseite">Startseite</string>
+    <string name="startseite">Alt St. Alban</string>
     <string name="tour">Tour</string>
     <string name="zeitstrahl">Zeitstrahl</string>
     <string name="ber_uns">Impressum</string>
+    <string name="menu_tour">Ich möchte eine Museumstour!</string>
+    <string name="menu_gallery">Ich möchte Bilder sehen!</string>
+    <string name="menu_time">Ich möchte eine Zeitreise machen!</string>
+
 </resources>
