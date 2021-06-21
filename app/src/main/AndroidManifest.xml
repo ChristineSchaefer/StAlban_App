@@ -19,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>-->
+
         <activity
             android:name=".sta_gallery.sta_gallery_activity"
             android:label="Galerie"
