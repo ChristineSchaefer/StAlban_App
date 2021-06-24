@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stalban_app">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +22,7 @@
         </activity>-->
 
         <activity
-            android:name=".sta_gallery.sta_gallery_activity"
+            android:name=".sta_gallery.StaGalleryActivityMain"
             android:label="Galerie"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
             <intent-filter>
@@ -31,8 +32,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sta_gallery.sta_gallery_activity_war"
-            android:label ="Galerie_Kriegsjahre"
+            android:name=".sta_gallery.StaGalleryActivityView"
+            android:label ="Galerie"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
         </activity>
         <meta-data
