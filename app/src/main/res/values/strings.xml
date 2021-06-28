@@ -30,5 +30,6 @@
     <string name="menu_gallery">Ich möchte Bilder sehen!</string>
     <string name="menu_time">Ich möchte eine Zeitreise <br/> machen!</string>
     <string name="kriegsjahre">kriegsjahre</string>
+    <string name="image">Image</string>
 
 </resources>

@@ -1,36 +1,23 @@
 package com.example.stalban_app.sta_gallery;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.view.View;
-import android.widget.Toast;
+import android.util.Log;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.stalban_app.R;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class StaGalleryActivityView extends AppCompatActivity {
 
-    private final String image_titles[] = {
-            "Img1",
-            "Img2"
-    };
-    private final Integer image_ids[] = {
-            R.drawable.rba_mf043215,
-            R.drawable.rba_mf137461
-    };
+    private String button;
+    private String image_titles[];
+    private Integer image_ids[];
+
     //List<StaCell> allFilesPaths;
 
    /* @Override
@@ -50,6 +37,10 @@ public class StaGalleryActivityView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_gallery_view);
 
+        button = getIntent().getStringExtra("button");
+        image_titles = changeImagesTitles(button);
+        image_ids = changeButtonImages(button);
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.gallery_template);
         recyclerView.setHasFixedSize(true);
 
@@ -60,6 +51,8 @@ public class StaGalleryActivityView extends AppCompatActivity {
         StaAdapter adapter = new StaAdapter(getApplicationContext(), cells);
         recyclerView.setAdapter(adapter);
 
+
+
         //for the storage permission
         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1000);
@@ -67,6 +60,60 @@ public class StaGalleryActivityView extends AppCompatActivity {
             //show the images
             showImages();
         }*/
+    }
+
+    static Integer[] changeButtonImages(String button) {
+        List<Integer> imageIds = new ArrayList<>();
+
+        switch (button) {
+            case "before":
+                imageIds.add(R.drawable.rba_mf043215);
+                break;
+            case "war":
+                imageIds.add(R.drawable.rba_mf137461);
+                break;
+            case "after":
+                imageIds.add(R.drawable.sta_background_gallery_menu);
+                break;
+            case "art":
+                imageIds.add(R.drawable.rba_d016212);
+                break;
+            default:
+                Log.e(null, "No Images found.");
+                break;
+        }
+
+        Integer[] toReturn = new Integer[imageIds.size()];
+        imageIds.toArray(toReturn);
+
+        return toReturn;
+    }
+
+    static String[] changeImagesTitles(String button) {
+        List<String> imageTitles = new ArrayList<>();
+
+        switch (button) {
+            case "before":
+                imageTitles.add("Bild1");
+                break;
+            case "war":
+                imageTitles.add("Bild2");
+                break;
+            case "after":
+                imageTitles.add("3");
+                break;
+            case "art":
+                imageTitles.add("Bild17");
+                break;
+            default:
+                Log.e(null, "No Images found.");
+                break;
+        }
+
+        String[] toReturn = new String[imageTitles.size()];
+        imageTitles.toArray(toReturn);
+
+        return toReturn;
     }
 
     //show images on the screen
@@ -101,7 +148,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
             cell.setPath(c.getPath());
             allImages.add(cell);
         }*/
-        for(int i = 0; i < image_titles.length; i++){
+        for (int i = 0; i < image_titles.length; i++) {
             StaCell cell = new StaCell();
             cell.setTitle(image_titles[i]);
             cell.setImg(image_ids[i]);
