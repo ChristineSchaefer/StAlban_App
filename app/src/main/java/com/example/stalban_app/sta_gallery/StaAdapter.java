@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ import java.util.ArrayList;
 public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
     private final ArrayList<StaCell> galleryList;
     private final Context context;
+
+    boolean isImageFitToScreen;
 
     public StaAdapter(Context context, ArrayList<StaCell> galleryList) {
         this.galleryList = galleryList;
@@ -44,7 +47,15 @@ public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
         holder.img.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Image", Toast.LENGTH_SHORT).show();
+                if(isImageFitToScreen) {
+                    isImageFitToScreen=false;
+                    holder.img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                    holder.img.setAdjustViewBounds(true);
+                }else{
+                    isImageFitToScreen=true;
+                    holder.img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+                    holder.img.setScaleType(ImageView.ScaleType.FIT_XY);
+                }
             }
         });
 
@@ -64,15 +75,16 @@ public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
             title = (TextView) view.findViewById(R.id.cellTitle);
             img = (ImageView) view.findViewById(R.id.img_cell);
         }
-    }
 
-    private void setImageFromPath(String path, ImageView image) {
-        File imgFile = new File(path);
-        if (imgFile.exists()) {
-            Bitmap bitmap = StaImagehelper.decodeSampledBitmapFromPath(imgFile.getAbsolutePath(), 200, 200);
-            image.setImageBitmap(bitmap);
+        public TextView getTitle() {
+            return title;
+        }
+
+        public ImageView getImg() {
+            return img;
         }
     }
+
 
 
 }

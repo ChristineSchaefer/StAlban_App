@@ -18,21 +18,6 @@ public class StaGalleryActivityView extends AppCompatActivity {
     private String image_titles[];
     private Integer image_ids[];
 
-    //List<StaCell> allFilesPaths;
-
-   /* @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull @NotNull String[] permissions, @NonNull @NotNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 1000) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                showImages();
-            } else {
-                Toast.makeText(this, "Permission not granted!", Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }
-    }*/
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_gallery_view);
@@ -51,15 +36,6 @@ public class StaGalleryActivityView extends AppCompatActivity {
         StaAdapter adapter = new StaAdapter(getApplicationContext(), cells);
         recyclerView.setAdapter(adapter);
 
-
-
-        //for the storage permission
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1000);
-        } else {
-            //show the images
-            showImages();
-        }*/
     }
 
     static Integer[] changeButtonImages(String button) {
@@ -76,7 +52,12 @@ public class StaGalleryActivityView extends AppCompatActivity {
                 imageIds.add(R.drawable.sta_background_gallery_menu);
                 break;
             case "art":
-                imageIds.add(R.drawable.rba_d016212);
+                imageIds.add(R.drawable.brba_d048792);
+                imageIds.add(R.drawable.brba_d048793);
+                imageIds.add(R.drawable.brba_d048794);
+                imageIds.add(R.drawable.brba_d048795);
+                imageIds.add(R.drawable.brba_d048796);
+                imageIds.add(R.drawable.brba_d048797);
                 break;
             default:
                 Log.e(null, "No Images found.");
@@ -103,7 +84,12 @@ public class StaGalleryActivityView extends AppCompatActivity {
                 imageTitles.add("3");
                 break;
             case "art":
-                imageTitles.add("Bild17");
+                imageTitles.add("Grundriss der Kirche");
+                imageTitles.add("Äußere Ansicht Süd-West-Seite");
+                imageTitles.add("Orgelaltar");
+                imageTitles.add("Seitenflügel");
+                imageTitles.add("Rundbogen");
+                imageTitles.add("Mittelraum");
                 break;
             default:
                 Log.e(null, "No Images found.");
@@ -115,29 +101,6 @@ public class StaGalleryActivityView extends AppCompatActivity {
 
         return toReturn;
     }
-
-    //show images on the screen
-    /*private void showImages() {
-        //folder with all the images
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/pictures/";
-        allFilesPaths = new ArrayList<>();
-        allFilesPaths = listAllFiles(path);
-
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.gallery_template);
-        recyclerView.setHasFixedSize(true);
-
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 3);
-        recyclerView.setLayoutManager(layoutManager);
-
-        //optimizations
-        recyclerView.setItemViewCacheSize(20);
-        recyclerView.setDrawingCacheEnabled(true);
-        recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-
-        ArrayList<StaCell> cells = new ArrayList<>();
-        StaAdapter adapter = new StaAdapter(getApplicationContext(), cells);
-        recyclerView.setAdapter(adapter);
-    }*/
 
     //prepare the images for the list
     private ArrayList<StaCell> prepareDate() {
@@ -156,23 +119,6 @@ public class StaGalleryActivityView extends AppCompatActivity {
         }
         return allImages;
     }
-
-    //load all files from the folder
-    /*private List<StaCell> listAllFiles(String pathName) {
-        List<StaCell> allFiles = new ArrayList<>();
-        File file = new File(pathName);
-        File[] files = file.listFiles();
-        if (files != null) {
-            for (File f : files) {
-                StaCell cell = new StaCell();
-                cell.setTitle(f.getName());
-                cell.setPath(f.getAbsolutePath());
-                allFiles.add(cell);
-            }
-        }
-        return allFiles;
-    }*/
-
 
 }
 
