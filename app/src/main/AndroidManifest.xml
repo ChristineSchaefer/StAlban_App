@@ -21,7 +21,17 @@
             </intent-filter>
         </activity>-->
 
-
+        <!--
+        <activity
+            android:name=".sta_start.StaStartActivityMain"
+            android:label="Start"
+            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        -->
         <activity
             android:name=".sta_gallery.StaGalleryActivityMain"
             android:label="Galerie"
