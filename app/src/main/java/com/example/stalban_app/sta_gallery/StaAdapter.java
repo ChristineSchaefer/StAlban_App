@@ -1,30 +1,32 @@
 package com.example.stalban_app.sta_gallery;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.media.Image;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowInsetsController;
+import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.stalban_app.R;
 
-import java.io.File;
 import java.util.ArrayList;
 
 //use for the list of the images (RecyclerView)
 public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
     private final ArrayList<StaCell> galleryList;
     private final Context context;
+    private String fullScreenInd;
+    private Object StaGalleryActivityView;
 
-    boolean isImageFitToScreen;
 
     public StaAdapter(Context context, ArrayList<StaCell> galleryList) {
         this.galleryList = galleryList;
@@ -44,21 +46,6 @@ public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
         holder.title.setText(galleryList.get(position).getTitle());
         holder.img.setScaleType(ImageView.ScaleType.CENTER_CROP);
         holder.img.setImageResource(galleryList.get(position).getImg());
-        holder.img.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                if(isImageFitToScreen) {
-                    isImageFitToScreen=false;
-                    holder.img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-                    holder.img.setAdjustViewBounds(true);
-                }else{
-                    isImageFitToScreen=true;
-                    holder.img.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
-                    holder.img.setScaleType(ImageView.ScaleType.FIT_XY);
-                }
-            }
-        });
-
     }
 
     @Override
@@ -83,7 +70,24 @@ public class StaAdapter extends RecyclerView.Adapter<StaAdapter.ViewHolder> {
         public ImageView getImg() {
             return img;
         }
+
+        public void changeToFullScreen(Activity a) {
+            String fullScreenInd = a.getIntent().getStringExtra("fullScreenIndicator");
+            if ("y".equals(fullScreenInd)) {
+                a.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                        WindowManager.LayoutParams.FLAG_FULLSCREEN);
+                a.getActionBar().hide();
+
+                getImg().getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
+                getImg().getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
+                getImg().setAdjustViewBounds(false);
+                getImg().setScaleType(ImageView.ScaleType.FIT_XY);
+
+            }
+        }
     }
+
+
 
 
 
