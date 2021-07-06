@@ -34,7 +34,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/view2"
                 app:layout_constraintTop_toTopOf="@+id/view2"
-                android:gravity="center_horizontal" />
+                android:gravity="center" />
 
             <Button
         android:id="@+id/menu_button_1"
