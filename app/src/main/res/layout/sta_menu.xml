@@ -36,53 +36,57 @@
                 app:layout_constraintTop_toTopOf="@+id/view2"
                 android:gravity="center" />
 
-    <Button
-        android:id="@+id/menu_button_1"
-        android:text="@string/menu_tour"
-        android:textSize="17sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/rechteck_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+            <Button
+                android:id="@+id/menu_button_1"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/rechteck_2"
+                android:text="@string/menu_tour"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-    <Button
-        android:id="@+id/menu_button_2"
-        android:text="@string/menu_gallery"
-        android:textSize="17sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rechteck_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_button_1"
-        android:layout_marginTop="50dp"/>
+            <Button
+                android:id="@+id/menu_button_2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rechteck_2"
+                android:text="@string/menu_gallery"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_button_1" />
 
-    <Button
-        android:id="@+id/menu_button_3"
-        android:text="@string/menu_time"
-        android:textSize="17sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rechteck_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_button_2" />
+            <Button
+                android:id="@+id/menu_button_3"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rechteck_2"
+                android:text="@string/menu_time"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_button_2" />
 
-    <Button
-        android:id="@+id/menu_button_4"
-        android:text="@string/ber_uns"
-        android:textSize="17sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rechteck_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_button_3"
-        android:layout_marginTop="50dp"/>
+            <Button
+                android:id="@+id/menu_button_4"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rechteck_2"
+                android:text="@string/ber_uns"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_button_3" />
 
         </LinearLayout>
 
