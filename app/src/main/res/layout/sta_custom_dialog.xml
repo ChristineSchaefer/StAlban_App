@@ -3,15 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:layout_margin="10dp">
+    android:layout_margin="2dp"
+    android:background="@color/header">
 
     <TextView
         android:id="@+id/txt_image_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Image Name"
+        android:text="@string/image_name"
         android:gravity="center"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
 
     <ImageView
         android:id="@+id/img"
@@ -19,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_image_name"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_launcher_round"/>
+        android:src="@mipmap/ic_launcher_round"
+        android:contentDescription="@string/image_to_show" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,21 +32,21 @@
 
         <Button
             android:id="@+id/btn_full"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Full View"
-            android:textColor="#fff"
-            android:background="@color/background"/>
+            android:text="@string/full_view"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_close"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Close"
-            android:textColor="#fff"
-            android:background="#000"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="@string/close"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -31,5 +31,9 @@
     <string name="kriegsjahre">kriegsjahre</string>
     <string name="image">Image</string>
     <string name="galerie">Galerie</string>
+    <string name="image_name">Image Name</string>
+    <string name="full_view">Full View</string>
+    <string name="image_to_show">image to show</string>
+    <string name="close">Close</string>
 
 </resources>

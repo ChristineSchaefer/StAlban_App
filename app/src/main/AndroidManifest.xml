@@ -22,7 +22,7 @@
         </activity>-->
 
 
-        <!--<activity
+        <activity
             android:name=".sta_start.StaStartActivityMain"
             android:label="Start"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
@@ -36,7 +36,6 @@
             android:label="Menu"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
         </activity>
-
         <activity
             android:name=".sta_gallery.StaGalleryActivityMain"
             android:label="Galerie"
@@ -46,16 +45,9 @@
             android:name=".sta_gallery.StaGalleryActivityView"
             android:label ="Galerie"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
-        </activity>-->
-
-        <activity android:name=".gallery_test.Gallery">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
-        <activity android:name=".gallery_test.FullView"
-            android:theme="@style/fullViewTheme"/>
+        <activity android:name=".sta_gallery.StaFullView"
+            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

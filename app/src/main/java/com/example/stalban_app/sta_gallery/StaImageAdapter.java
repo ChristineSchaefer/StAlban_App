@@ -1,4 +1,4 @@
-package com.example.stalban_app.gallery_test;
+package com.example.stalban_app.sta_gallery;
 
 import android.content.Context;
 import android.view.View;
@@ -9,12 +9,12 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-public class ImageAdapter extends BaseAdapter {
+public class StaImageAdapter extends BaseAdapter {
 
     private List<Integer> mThumIds;
     private Context mContext;
 
-    public ImageAdapter(List<Integer> mThumbIds, Context mContext){
+    public StaImageAdapter(List<Integer> mThumbIds, Context mContext){
         this.mContext = mContext;
         this.mThumIds = mThumbIds;
     }
@@ -44,7 +44,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setScaleType((ImageView.ScaleType.CENTER_CROP));
         }
 
-        imageView.setImageResource((mThumIds.get(position)));
+        imageView.setImageResource(mThumIds.get(position));
 
         return imageView;
     }
