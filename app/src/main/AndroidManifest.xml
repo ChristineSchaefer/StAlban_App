@@ -24,7 +24,7 @@
 
         <activity
             android:name=".sta_start.StaStartActivityMain"
-            android:label="Start"
+            android:label="St. Alban"
             android:theme="@style/Theme.StAlban_App.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -47,6 +47,9 @@
             android:theme="@style/Theme.StAlban_App.NoActionBar">
         </activity>
         <activity android:name=".sta_gallery.StaFullView"
+            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+        <activity android:name=".sta_timeline.StaTimelineActivityMain"
+            android:label="Timeline"
             android:theme="@style/Theme.StAlban_App.NoActionBar"/>
         <meta-data
             android:name="preloaded_fonts"
