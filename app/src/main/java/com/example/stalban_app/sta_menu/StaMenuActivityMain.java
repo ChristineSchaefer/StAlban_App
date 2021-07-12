@@ -12,6 +12,7 @@ import com.example.stalban_app.sta_gallery.StaGalleryActivityMain;
 import com.example.stalban_app.sta_gallery.StaGalleryActivityView;
 import com.example.stalban_app.sta_start.StaStartActivityMain;
 import com.example.stalban_app.sta_timeline.StaTimelineActivityMain;
+import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
 public class StaMenuActivityMain extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class StaMenuActivityMain extends AppCompatActivity {
         Button tour = findViewById(R.id.menu_button_1);
         tour.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(StaMenuActivityMain.this, StaMenuActivityMain.class);
+                Intent i = new Intent(StaMenuActivityMain.this, StaTourActivityMain.class);
                 startActivity(i);
             }
         });
