@@ -35,5 +35,10 @@
     <string name="full_view">Full View</string>
     <string name="image_to_show">image to show</string>
     <string name="close">Close</string>
+    <string name="tour_intro_text">Sie stehen vor einem der ältesten romanischen Kirchengebäuden Kölns.<br /> <b>Alt Sankt Alban.</b> <br />Das in Ruinen stehenden Kirchengebäude trägt die Narben der letzten Jahrhunderte und Kriege, welche die Stadt Köln geprägt haben, besonders präsent zur Schau. <br />Kommen sie mit auf eine kleine Zeitreise, welche die Kirche durch ihre Geschichte wiederauferstehen lässt.</string>
+    <string name="start">Start</string>
+    <string name="stop1">Es ist sehr widersprüchlich, dass obwohl St. Alban neben St. Columba die älteste und bevorzugteste Pfarre war, uns von Alt St. Alban kaum Nachrichten überliefert wurden. <br /> <br />Die Ursprünge gehen auf das <b>Jahr 800</b> zurück.</string>
+    <string name="zur_ck">Zurück</string>
+    <string name="weiter">Weiter</string>
 
 </resources>

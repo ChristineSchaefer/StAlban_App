@@ -51,6 +51,13 @@
         <activity android:name=".sta_timeline.StaTimelineActivityMain"
             android:label="Timeline"
             android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+        <activity
+            android:name=".sta_tour.StaTourActivityMain"
+            android:label ="Tour"
+            android:theme="@style/Theme.StAlban_App.NoActionBar">
+        </activity>
+        <activity android:name=".sta_tour.StaTourActivityStops"
+            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
