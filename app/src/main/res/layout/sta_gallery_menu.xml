@@ -38,6 +38,7 @@
                 android:layout_marginTop="48dp"
                 android:background="@drawable/rechteck_2"
                 android:text="@string/st_alban_damals"
+                android:textColor="@color/text"
                 android:textSize="17sp"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -48,6 +49,7 @@
                 android:layout_marginTop="60dp"
                 android:background="@drawable/rechteck_2"
                 android:text="@string/kriegsjahre"
+                android:textColor="@color/text"
                 android:textSize="17sp" />
 
             <Button
@@ -57,6 +59,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@drawable/rechteck_2"
                 android:text="@string/st_alban_heute"
+                android:textColor="@color/text"
                 android:textSize="17sp" />
 
             <Button
@@ -66,6 +69,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@drawable/rechteck_2"
                 android:text="@string/st_alban_in_der_kunst"
+                android:textColor="@color/text"
                 android:textSize="17sp" />
 
 
