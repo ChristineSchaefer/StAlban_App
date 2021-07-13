@@ -11,8 +11,8 @@ import java.util.List;
 
 public class StaImageAdapter extends BaseAdapter {
 
-    private List<Integer> mThumIds;
-    private Context mContext;
+    private final List<Integer> mThumIds;
+    private final Context mContext;
 
     public StaImageAdapter(List<Integer> mThumbIds, Context mContext){
         this.mContext = mContext;

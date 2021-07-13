@@ -4,8 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -15,37 +13,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.stalban_app.R;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Collections;
 
 public class StaGalleryActivityView extends AppCompatActivity {
 
-    private String button;
-    private ArrayList<String> imageTitles = new ArrayList<>(Arrays.asList());
-    private ArrayList<Integer> imageIds = new ArrayList<>(Arrays.asList());
+    private ArrayList<Integer> imageIds = new ArrayList<>(Collections.emptyList());
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_gallery_view);
 
-        button = getIntent().getStringExtra("button");
-        imageTitles = changeImagesTitles(button);
+        String button = getIntent().getStringExtra("button");
+        ArrayList<String> imageTitles = changeImagesTitles(button);
         imageIds = changeButtonImages(button);
 
         GridView gridView = findViewById(R.id.galleryGrid);
         gridView.setAdapter(new StaImageAdapter(imageIds, this));
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                int item_pos = imageIds.get(position);
+        gridView.setOnItemClickListener((parent, view, position, id) -> {
+            int item_pos = imageIds.get(position);
 
-                showDialogBox(item_pos);
-            }
+            showDialogBox(item_pos);
         });
 
     }
@@ -129,20 +119,12 @@ public class StaGalleryActivityView extends AppCompatActivity {
 
         image.setImageResource(item_pos);
 
-        btnClose.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                dialog.dismiss();
-            }
-        });
+        btnClose.setOnClickListener(v -> dialog.dismiss());
 
-        btnFull.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(StaGalleryActivityView.this, StaFullView.class);
-                i.putExtra("img_id", item_pos);
-                startActivity(i);
-            }
+        btnFull.setOnClickListener(v -> {
+            Intent i = new Intent(StaGalleryActivityView.this, StaFullView.class);
+            i.putExtra("img_id", item_pos);
+            startActivity(i);
         });
 
         dialog.show();
