@@ -41,4 +41,8 @@
     <string name="zur_ck">Zurück</string>
     <string name="weiter">Weiter</string>
 
+    <!--Impressum Stings-->
+    <string name="impressum">Impressum</string>
+    <string name="impressum_data">Name 1</string>
+
 </resources>
