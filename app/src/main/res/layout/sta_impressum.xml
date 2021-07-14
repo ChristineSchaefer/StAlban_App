@@ -36,7 +36,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/impressum_data"
                 android:textColor="@color/text"
-                android:textSize="17sp"/>
+                android:textSize="28sp"
+                android:paddingLeft="30sp"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
