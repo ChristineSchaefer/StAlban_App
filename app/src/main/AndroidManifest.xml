@@ -58,6 +58,8 @@
         </activity>
         <activity android:name=".sta_tour.StaTourActivityStops"
             android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+        <activity android:name=".sta_impressum.StaImActivityMain"
+            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

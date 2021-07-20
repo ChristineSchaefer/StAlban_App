@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.stalban_app.R;
 import com.example.stalban_app.sta_gallery.StaGalleryActivityMain;
-import com.example.stalban_app.sta_impressum.StaImpressumActivityMain;
+import com.example.stalban_app.sta_impressum.StaImActivityMain;
 import com.example.stalban_app.sta_timeline.StaTimelineActivityMain;
 import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
@@ -45,9 +45,9 @@ public class StaMenuActivityMain extends AppCompatActivity {
         Button Impressum
         Hier noch Zielklasse ändern
          */
-        Button impressum = findViewById(R.id.menu_button_4);
-        impressum.setOnClickListener(v -> {
-            Intent i = new Intent(StaMenuActivityMain.this, StaImpressumActivityMain.class);
+        Button im = findViewById(R.id.menu_button_4);
+        im.setOnClickListener(v -> {
+            Intent i = new Intent(StaMenuActivityMain.this, StaImActivityMain.class);
             startActivity(i);
         });
 
