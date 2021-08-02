@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<tour>
+    <stop xml:id = "stop1" xml:base="tour.xml">
+        <content>
+            Sie stehen vor einem der ältesten romanischen Kirchengebäuden Kölns. Alt Sankt Alban. 
+            Das in Ruinen stehenden Kirchengebäude trägt die Narben der letzten Jahrhunderte und Kriege, welche die Stadt Köln geprägt haben, besonders präsent zur Schau.  
+            Kommen sie mit auf eine kleine Zeitreise, welche die Kirche durch ihre Geschichte wieder auferstehen lässt.
+        </content>
+    </stop>
+    <stop xml:id = "stop2" xml:base="tour.xml">
+        <content>
+            Es ist sehr widersprüchlich, dass obwohl St. Alban neben St. Columba die älteste und bevorzugteste Pfarre war, uns von Alt St. Alban kaum Nachrichten überliefert wurden. (Reiners, Heribert 1911)
+            Die Ursprünge gehen auf das Jahr 800 zurück.
+        </content>
+    </stop>
+    <stop xml:id = "stop3" xml:base="tour.xml">
+        <content>
+            Der Name St. Alban wurde erstmals in einer Urkunde im Jahre 1172 vor, in welcher „Harmannus de S. Albano“ erwähnt wird. Genaueres ist über den Anfang nicht übermittelt. 
+            1176 wurde die Kirche erstmals als Pfarrkirche aufgeführt. 
+            Die älteste Baunachricht stammt von einer Schreinseintragung nach der im Jahre 1323 der Jude Joseph v. Arwilre Geld gibt, das für den Turmbau deponiert wird.  
+        </content>
+    </stop>
+    <stop xml:id = "stop4" xml:base="tour.xml">
+        <content>
+            1451 zur Zeit der Pest stellte sich der Kirchplatz als zu klein zur Beerdigung der ganzen Pesttoten heraus. Also holten sich in diesem Jahr die Kirchmeister beim Rat der Stadt die Erlaubnis, die Toten auf dem damals freien Platz zwischen den Häusern des “Heinrich Hardefuyst” und des Malers “Stephan Lochner” zu beerdigen. 
+        </content>
+    </stop>
+    <stop xml:id = "stop5" xml:base="tour.xml">
+        <content>
+            Der Turm der Kirche mit seinen romanischen Formen stammt aus dem Jahr 1494. Dieser stammt aus einer Stiftung von 5 oberland Gulden „zu deme buwe der Kirspelskirchen zo sant Alban“.
+            1507 erhielt die Kirche die St. Alban gewidmete Bronzeglocken des Johann von Andernach. Sie war eine von insgesamt vier Glocken der Kirche. Sie trägt den Namen Alban und die Umschrift: „ALBANUS HEISCHEN ICH IND ERE SENT QVIRINS LVIDEN ICH TZO GOTTDIEINST GEBRVCHT MEN MICH BLITZEN IND DONRE STUREN ICH“.
+        </content>
+    </stop>
+    <stop xml:id = "stop6" xml:base="tour.xml">
+        <content>
+            Im Jahre 1633 wurde die Kirchenanlage nach Süden erweitert.
+            Von den Jahren 1668-1672 wurde die Kirche durch den Baumeister Arnold Gülich als Hallenkirche neu gestaltet. Aus diesem Umbau im Mittelalter hat die Kirche ihre heutige Form erhalten. Der Umbau wurde aus Dokumenten übermittelt, in welchen der Rat der Stadt 15.000 Ziegelsteine für den Umbau bewilligten.
+            
+            1911 wurde der Umbau des Innenraum nach Gülich so beschrieben: 
+            „Beim Innern lagen die Verhältnisse für den Architekten, der den gegebenen Bau erweitern sollte, nicht so günstig wie bei St. Columba, und es ist ihm daher auch keine befriedigende Raumlösung gelungen. Da er eine möglichst weite Dehnung erstrebte, konnte er nur wenige Stützen geben. Aber der Gegensatz zum alten Teile ist dabei zu scharf geworden. Das Chor wirkt nun zu schmal und bietet kaum Raum für den Altar. Die ganze Ostpartie scheint zu schwer, und namentlich hier fühlt man, wie sich der Künstler mit dem Räume abmühte. Unschön ist vor allem dabei, wie der Bogen des Chorjoches von der Vierung abgeschnitten wird. Daneben schlug man in einem schmalen Abstand einen zweiten Bogen, den man an der Außenwand auf vorgelegtem Pfeiler lasten ließ. In der südlichen Nebenapsis zerstörte man dadurch deren alten Schluss und schuf gerade hier tote Ecken. Es ist eine verzwickte Bogenanlage, die anscheinend über das Können des Baumeisters Gülich hinausging, denn ein eigener „Bogensteller" trat bei der Konstruktion für ihn ein. Die Gewölbe der Kirche, die allenthalben reich gestaltet sind, befriedigen das Auge nur im Chore ganz, weil sie hier organisch sich darbieten, während sie teilweise sonst mit ihren Rippen in den Flächen verlaufen und zerschnitten werden und dazu in ihrer Verbindung mit den quadratischen Stützen und den zwar reich profilierten aber nüchternen Kapitellen nicht recht passen wollen. Auch dem kuppelartigen Schluss der Vierung ist ein reiches Rippensystem vorgelegt worden. Nordwestlich schiebt sich in den Kirchenraum der Turm, der in seinem unteren Durchgang und der Empore darüber ebenfalls gotisch eingewölbt ist. 
+            Quelle: http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN
+        </content>
+    </stop>
+    <stop xml:id = "stop7" xml:base="tour.xml">
+        <content>
+            Es folgten weitere dokumentierte Umbauten und Reparaturen, von denen leider wenig übermittelt ist.  
+            1776 wurde die Kirche in Teilen von Mitteln der Familie de Groote erneuert.
+            1826 Reparaturen wurden an der Kirche durchgeführt. 
+            1832 Reparaturen wurden an der Kirche durchgeführt.
+        </content>
+    </stop>
+    <stop xml:id = "stop8" xml:base="tour.xml">
+        <content>
+            1838 bis hierhin gehen die Spuren einiger Aquarelle von St Alban. Von 1838-1856 waren diese im Besitz des Malers Johann Peter Weyer, von 1856 bis 1905 vermutlich in Belgien und dann seit 1905 im Kölner Stadtmuseum. 
+        </content>
+    </stop>
+    <stop xml:id = "stop9" xml:base="tour.xml">
+        <content>
+            Auf einer Rundreise fertige Johann Anton Ramboux 1847 einige Skizzen von Alt St. Alban in seinem Skizzenbuch an.         
+        </content>
+    </stop>
+    <stop xml:id = "stop10" xml:base="tour.xml">
+        <content>
+            1895/96 wurde der Turm in Stand gesetzt und die Fassade zu ihrer heutigen Optik umgestaltet.  
+            Reiners schrieb 1911 zu der Fassade „(...) neben dem Gürzenich, hat das Kirchlein des hl. Alban einen wenig günstigen Nachbarn gefunden. Neben der schönen und wohl proportionierten Schauseite dieses alten Festhauses vermag es mit seiner Fassade, die ihm eine Restauration des 19. Jahrhunderts gab, nicht zur Wirkung zu kommen, und seine beiden Flächen möchten, verglichen mit dem dortigen Reichtum, fast nüchtern scheinen.“
+            Quelle: http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN
+        </content>
+    </stop>
+    <stop xml:id = "stop11" xml:base="tour.xml">
+        <content>
+            Aus dem Jahre 1916 ist eine Grundrisszeichnung überliefert, welche Aufschluss über die ehemaligen Gewölbe von Alt St. Alban gibt.
+        </content>
+    </stop>
+    <stop xml:id = "stop12" xml:base="tour.xml">
+        <content>
+            1930 Fotografien zeigen das ehemalige Dach von Alt St. Alban aus verschiedenen Perspektiven (RBA) 
+        </content>
+    </stop>
+    <stop xml:id = "stop13" xml:base="tour.xml">
+        <content>
+            Während des Zweiten Weltkriegs (1939 - 1945) wurde Alt St. Alban mehrfach von abgeworfenen Bomben getroffen und brannte letztendlich aus. 
+            1943 beschlagnahmte man drei von vier Glocken des Turms von Alt St. Alban und hängt sie ab. Die St. Alban gewidmete Glocke wurde als einzige nicht beschlagnahmt. 
+            Nach dem letzten schweren Bombenangriff auf die Kölner Innenstadt am 02. März 1945 war die Kirche nur noch eine Ruine. Nur die Außenmauern und ein Teil des Turmes blieben stehen. Der letzte Pfarrverweser Dr. Karl Koch kam unter den Trümmern verschüttet ums Leben. Sein Leichnam wurde dort ein Jahr später aufgefunden.
+        </content>
+    </stop>
+    <stop xml:id = "stop14" xml:base="tour.xml">
+        <content>
+            Nach dem Krieg wurde die Kirche lediglich gesichert, aber nicht wieder aufgebaut. Sichtbar blieben noch die Pfeiler und Joche der Halle und die Apsiden mit den Fensteröffnungen. 
+            Es wohnten nur noch 312 Katholiken in dem zerstörten Pfarrbezirk St. Alban. Aufgrund der Vielzahl an schwer zerstörten Kirchen in der Innenstadt, wurde ein Wiederaufbau von Alt St. Alban ausgeschlossen. 
+            Die zur Gemeinde gehörenden Grundstücke am Quartermarkt, auf denen früher Kirche, Pfarrhaus, Kaplanei und Küsterei standen, wurden von der Stadt erworben, um sie in den Aufbau den Gürzenich einzubeziehen. 
+        </content>
+    </stop>
+    <stop xml:id = "stop15" xml:base="tour.xml">
+        <content>
+            1952 Bilder von Johann von Buren zeigen den Gürzenich und St. Alban. (RBA)
+        </content>
+    </stop>
+    <stop xml:id = "stop16" xml:base="tour.xml">
+        <content>
+            Nach langen Verhandlungen wurde am 12. Juli 1954 zwischen der Kirchengemeinde St. Alban und der Stadt Köln ein Vertrag geschlossen, demzufolge der Grundbesitz der Kirchengemeinde am Quartermarkt im Tausche gegen andere Grundstücke in das Eigentum der Stadt überging. Die Stadt Köln verpflichtete sich, den Turm der Kirche zu restaurieren und die dort befindliche St.-Konrad-von-Parzham-Kapelle wiederherzustellen, zu erhalten und sie dem Erzbistum zur Verfügung zu stellen. Die Stadt verpflichtete sich: „das übernommene Kirchengelände zu einer Erinnerungsstätte zu gestalten und stets und ausschließlich so zu verwenden, daß der Weihecharakter des Ortes gewahrt und jede Entweihung verhindert wird“. 
+        </content>
+    </stop>
+    <stop xml:id = "stop17" xml:base="tour.xml">
+        <content>
+            Am 23. Dezember 1954 erteilte Kardinal Frings die Genehmigung zur Profanierung: „zu profanen aber nicht schmutzigen Zwecken“. In den Ruinen konnte nun eine Gedenkstätte für die Toten der Weltkriege und der nationalsozialistischen Gewaltherrschaft errichtet werden.   
+            Die Ruine wurde in den Wiederaufbau des Gürzenichs einbezogen: die östliche und südliche Außenmauer der Kirche wurde zur Innenmauer von Treppenhaus und Foyer des Gürzenichs. Von dort hat man einen Blick in die Ruine und auf die im früheren Altarraum aufgestellten steinernen Skulpturen des „Trauernden Elternpaares“ der Käthe Kollwitz.
+        </content>
+    </stop>
+    <stop xml:id = "stop18" xml:base="tour.xml">
+        <content>
+            1958/1959 wurde Neu St. Alban im Kölner Stadtteil Neustadt-Nord in der Nordecke des Stadtgartens errichtet. Die Kirche wurde von Hans Schilling aus Trümmerziegeln der stark beschädigten und 1958 abgerissenen Oper Köln errichtet.
+            Die Sankt Bruder-Konrad-Kapelle im Erdgeschoss des Turms wurde im Oktober 1960 fertiggestellt und 1964 geweiht.
+        </content>
+    </stop>
+    <stop xml:id = "stop19" xml:base="tour.xml">
+        <content>
+            2007 wurde die Restaurierung der Kapelle von der Stadt mit Hilfe der Imhoff-Stiftung und des Landes NRW fertiggestellt. Dort hat auch die Mondsichelmadonna aus der 1. Hälfte des 16. Jahrhundert wieder ihren Platz gefunden.
+        </content>
+    </stop>
+    <stop xml:id = "stop20" xml:base="tour.xml">
+        <content>
+            Seit 2008 ist die einzige erhaltene Glocke „Alban“ als Angelusglocke in St. Gereon zu hören. 
+            „Wenn nun die Glocke mit dem Namen des heiligen Alban in unserer Pfarrkirche läutet, ist dies ein schönes Zeichen der Zusammengehörigkeit unserer neuen Gereonsgemeinde mit ihren drei Kirchen. Sie ist aber auch ein Zeichen der Verbundenheit mit der alten St. Alban-Gemeinde, deren Andenken in der Neu-Alban-Kirche und ihren Ausstattungsgegenständen fortdauert.“ (Andreas Brocke, Pfarrer)
+        </content>
+    </stop>
+    
+    
+</tour>
+

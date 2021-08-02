@@ -6,10 +6,10 @@
     android:background="@color/header">
 
     <TextView
-        android:id="@+id/stop1"
+        android:id="@+id/stop"
         android:layout_width="285dp"
         android:layout_height="430dp"
-        android:text="@string/stop1"
+        android:text="@string/stop_template"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stop1" />
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
 
     <Button
         android:id="@+id/btn_weiter"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toEndOf="@+id/btn_back"
-        app:layout_constraintTop_toBottomOf="@+id/stop1"
+        app:layout_constraintTop_toBottomOf="@+id/stop"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
