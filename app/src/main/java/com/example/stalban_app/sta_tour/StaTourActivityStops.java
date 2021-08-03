@@ -2,75 +2,55 @@ package com.example.stalban_app.sta_tour;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.stalban_app.R;
-import com.example.stalban_app.sta_xmlparser.TourStop;
-import com.example.stalban_app.sta_xmlparser.XMLParser;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class StaTourActivityStops extends AppCompatActivity {
 
-    private List<TourStop> tourStops = new ArrayList<>();
+    private int index = 1;
+    private final int[] stopStrings = {R.string.empty, R.string.stop1, R.string.stop2, R.string.stop3, R.string.stop4,
+            R.string.stop5, R.string.stop6, R.string.stop7, R.string.stop8, R.string.stop9,
+            R.string.stop10, R.string.stop11, R.string.stop12, R.string.stop13, R.string.stop14,
+            R.string.stop15, R.string.stop16, R.string.stop17, R.string.stop18, R.string.stop19, R.string.empty};
+    private TextView tourContent;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_tour_stop_template);
 
-        XMLParser parser = new XMLParser();
-        try {
-            InputStream in = new FileInputStream("src/main/res/values/strings.xml");
-            tourStops = parser.parse(in);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        String[] array = new String[tourStops.size()];
-        tourStops.toArray(array); // fill the array
-
-        TextView tourContent = findViewById(R.id.stop);
-        //tourContent.setText(array[1]);
+        tourContent = findViewById(R.id.stop);
+        tourContent.setText(getString(stopStrings[1]));
 
         Button back = findViewById(R.id.btn_back);
+        back.setOnClickListener(v -> showContent(stopStrings, 0));
         Button next = findViewById(R.id.btn_weiter);
+        next.setOnClickListener(v -> showContent(stopStrings, 1));
     }
 
-    public String showContent(String[] tourStops, int s) {
-        //TODO Verbindung zur Datei strings.xml herstellen
-        int index = 1;
+    public void showContent(int[] tourStops, int s) {
         //s == 1: button next
-        if (s == 1) {
+        if(index == 0){
+            startActivity(new Intent(StaTourActivityStops.this, StaTourActivityMain.class));
+        }
+        else if (index != 0 && s == 1) {
             index++;
+            if(index >= 20){
+                startActivity(new Intent(StaTourActivityStops.this, StaTourActivityEnd.class));
+            }
+            tourContent.setText(getString(tourStops[index]));
         }
         //s != 1: button back
-        else{
+        else if(index != 0 && s == 0){
             index--;
             //if index of tourContent == 0, go back to welcome-site
-            if(index == 0){
-                Intent i = new Intent(StaTourActivityStops.this, StaTourActivityMain.class);
-                startActivity(i);
+            if (index <= 0) {
+                startActivity(new Intent(StaTourActivityStops.this, StaTourActivityMain.class));
             }
+            tourContent.setText(getString(tourStops[index]));
         }
-        return tourStops[index];
     }
 }

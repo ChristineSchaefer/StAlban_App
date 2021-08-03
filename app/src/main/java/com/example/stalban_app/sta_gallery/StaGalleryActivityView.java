@@ -20,14 +20,18 @@ import java.util.Collections;
 public class StaGalleryActivityView extends AppCompatActivity {
 
     private ArrayList<Integer> imageIds = new ArrayList<>(Collections.emptyList());
+    private ArrayList<String> imageTitles = new ArrayList<>(Collections.emptyList());
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_gallery_view);
 
         String button = getIntent().getStringExtra("button");
-        ArrayList<String> imageTitles = changeImagesTitles(button);
+        imageTitles = changeImagesTitles(button);
         imageIds = changeButtonImages(button);
+
+        TextView galleryTitle = findViewById(R.id.gallery);
+        galleryTitle.setText(changeGalleryTitle(button));
 
         GridView gridView = findViewById(R.id.galleryGrid);
         gridView.setAdapter(new StaImageAdapter(imageIds, this));
@@ -40,7 +44,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
 
     }
 
-    static ArrayList<Integer> changeButtonImages(String button) {
+    public ArrayList<Integer> changeButtonImages(String button) {
         ArrayList<Integer> imageIds = new ArrayList<>();
 
         switch (button) {
@@ -69,7 +73,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
         return imageIds;
     }
 
-    static ArrayList<String> changeImagesTitles(String button) {
+    public ArrayList<String> changeImagesTitles(String button) {
         ArrayList<String> imageTitles = new ArrayList<>();
 
         switch (button) {
@@ -128,6 +132,29 @@ public class StaGalleryActivityView extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+    public String changeGalleryTitle(String button) {
+        String title = null;
+        switch (button) {
+            case "before":
+                title = "St. Alban vor dem Krieg";
+                break;
+            case "war":
+                title = "Kriegsjahre";
+                break;
+            case "after":
+                title = "St. Alban nach dem Krieg";
+                break;
+            case "art":
+                title = "St. Alban in der Kunst";
+                break;
+            default:
+                Log.e(null, "No Images found.");
+                break;
+        }
+
+        return title;
     }
 
 }

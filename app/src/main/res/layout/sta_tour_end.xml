@@ -8,26 +8,39 @@
     <TextView
         android:id="@+id/tour_intro"
         android:layout_width="match_parent"
-        android:layout_height="297dp"
+        android:layout_height="170dp"
         android:background="@drawable/tour_start"
-        android:text="@string/tour_intro_text"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/tour_outro_text"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="12dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_tourstart"
+        android:id="@+id/btn_menu"
         android:layout_width="142dp"
         android:layout_height="72dp"
-        android:text="@string/start"
-        android:textSize="14sp"
+        android:text="@string/hauptmen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tour_intro"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <Button
+        android:id="@+id/btn_tour"
+        android:layout_width="142dp"
+        android:layout_height="72dp"
+        android:text="@string/tour_starten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
         app:layout_constraintTop_toBottomOf="@+id/tour_intro"
         app:layout_constraintVertical_bias="0.569" />
 
