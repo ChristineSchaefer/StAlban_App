@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/arba_mfl000453_40">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/sta_toolbar"/>
+
     <TextView
         android:id="@+id/tour_intro"
         android:layout_width="match_parent"

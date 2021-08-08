@@ -3,11 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- "Mark Favorite", should appear as action button if possible -->
-    <item
-        android:id="@+id/action_home"
-        android:background="@color/header"
-        android:title="@string/startseite"
-        app:showAsAction="never" />
 
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_tour"
@@ -16,7 +11,29 @@
 
     <item android:id="@+id/action_gallery"
         android:title="@string/galerie"
-        app:showAsAction="never"/>
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_galleryMenu"
+                android:title="Menü"
+                app:showAsAction="never"/>
+            <item android:id="@+id/action_vorKrieg"
+                android:title="Vor dem Krieg"
+                app:showAsAction="never"/>
+            <item android:id="@+id/action_Krieg"
+                android:title="Im Krieg"
+                app:showAsAction="never"/>
+            <item android:id="@+id/action_nachKrieg"
+                android:title="Nach dem Krieg"
+                app:showAsAction="never"/>
+            <item android:id="@+id/action_Kunst"
+                android:title="In der Kunst"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
 
     <item android:id="@+id/action_timelaps"
         android:title="@string/zeitstrahl"

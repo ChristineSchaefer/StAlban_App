@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:background="@color/header">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/sta_toolbar"/>
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"

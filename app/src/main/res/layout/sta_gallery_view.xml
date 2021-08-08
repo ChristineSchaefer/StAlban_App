@@ -7,6 +7,10 @@
     android:background="@color/header"
     tools:context=".sta_gallery.StaGalleryActivityView">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/sta_toolbar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
