@@ -11,8 +11,6 @@ import androidx.appcompat.widget.Toolbar;
 
 
 import com.example.stalban_app.R;
-import com.example.stalban_app.sta_menu.StaMenuActivityMain;
-import com.example.stalban_app.sta_start.StaStartActivityMain;
 
 public class StaGalleryActivityMain extends AppCompatActivity {
 

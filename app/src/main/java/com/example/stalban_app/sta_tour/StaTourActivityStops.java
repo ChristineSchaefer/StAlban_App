@@ -2,8 +2,10 @@ package com.example.stalban_app.sta_tour;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -20,6 +22,8 @@ public class StaTourActivityStops extends AppCompatActivity {
             R.string.stop10, R.string.stop11, R.string.stop12, R.string.stop13, R.string.stop14,
             R.string.stop15, R.string.stop16, R.string.stop17, R.string.stop18, R.string.stop19, R.string.empty};
     private TextView tourContent;
+    private Button back;
+    private Button next;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +33,11 @@ public class StaTourActivityStops extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         tourContent = findViewById(R.id.stop);
-        tourContent.setText(getString(stopStrings[1]));
+        tourContent.setText(Html.fromHtml(getString(stopStrings[1])));
 
-        Button back = findViewById(R.id.btn_back);
+        back = findViewById(R.id.btn_back);
         back.setOnClickListener(v -> showContent(stopStrings, 0));
-        Button next = findViewById(R.id.btn_weiter);
+        next = findViewById(R.id.btn_weiter);
         next.setOnClickListener(v -> showContent(stopStrings, 1));
     }
 
@@ -45,18 +49,22 @@ public class StaTourActivityStops extends AppCompatActivity {
         else if (index != 0 && s == 1) {
             index++;
             if(index >= 20){
+                back.setVisibility(View.INVISIBLE);
+                next.setVisibility(View.INVISIBLE);
                 startActivity(new Intent(StaTourActivityStops.this, StaTourActivityEnd.class));
             }
-            tourContent.setText(getString(tourStops[index]));
+            tourContent.setText(Html.fromHtml(getString(tourStops[index])));
         }
         //s != 1: button back
         else if(index != 0 && s == 0){
             index--;
             //if index of tourContent == 0, go back to welcome-site
             if (index <= 0) {
+                back.setVisibility(View.INVISIBLE);
+                next.setVisibility(View.INVISIBLE);
                 startActivity(new Intent(StaTourActivityStops.this, StaTourActivityMain.class));
             }
-            tourContent.setText(getString(tourStops[index]));
+            tourContent.setText(Html.fromHtml(getString(tourStops[index])));
         }
     }
 
@@ -65,6 +73,10 @@ public class StaTourActivityStops extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.sta_menu, menu);
         return true;
+    }
+
+    public void makeTextBold(String text){
+
     }
 
 }
