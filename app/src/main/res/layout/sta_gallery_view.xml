@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author ChristineSchaefer
+
+Layout-template for sub-galleries
+
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,11 +13,13 @@
     android:background="@color/header"
     tools:context=".sta_gallery.StaGalleryActivityView">
 
+    <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
         layout="@layout/sta_toolbar"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- allows views to stand among themselves -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+        <!-- header sub-gallery -->
         <TextView
             android:id="@+id/gallery"
             android:layout_width="match_parent"
@@ -33,6 +42,7 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="2dp" />
 
+        <!-- empty gridview to fill in with images -->
         <GridView
             android:id="@+id/galleryGrid"
             android:layout_width="fill_parent"
@@ -47,6 +57,6 @@
             android:paddingEnd="5dp"
             android:paddingRight="5dp"
             android:verticalSpacing="10dp" />
-    </LinearLayout>
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

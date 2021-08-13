@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author ChristineSchaefer
+
+Layout-template for full screen image
+
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:Context="gallery_test.FullView">
 
-    <!-- ContentDescription noch in strings hinzufügen (hier nur vorläufig) -->
+    <!-- image resource -->
     <ImageView
         android:id="@+id/img_full"
         android:layout_width="match_parent"

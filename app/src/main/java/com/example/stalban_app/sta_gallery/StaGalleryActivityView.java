@@ -36,6 +36,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
     /**
      * Method for loading the layout and setting the functionality.
      */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         // basic overwrite-part for setting layout
         super.onCreate(savedInstanceState);

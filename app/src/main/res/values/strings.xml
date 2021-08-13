@@ -1,16 +1,8 @@
 <resources>
+
+    <!-- General -->
     <string name="app_name">StAlban_App</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello World!</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="hello_third_fragment">Das ist ne neue Seite!</string>
-    <string name="textViewDefault">Blallalalalalalal</string>
 
     <!--Gallery Stings-->
     <string name="galerie_titel_template">Titel</string>
@@ -26,15 +18,14 @@
     <string name="image_to_show">image to show</string>
     <string name="close">Close</string>
 
-    <string name="tour">Tour</string>
-    <string name="zeitstrahl">Zeitstrahl</string>
-    <string name="ber_uns">Impressum</string>
-
     <!-- Menu-->
     <string name="menu">Wo soll es hingehen?</string>
     <string name="menu_tour">Ich möchte eine Museumstour!</string>
     <string name="menu_gallery">Ich möchte Bilder sehen!</string>
     <string name="menu_time">Ich möchte eine Zeitreise<br /> machen!</string>
+    <string name="tour">Tour</string>
+    <string name="zeitstrahl">Zeitstrahl</string>
+    <string name="ber_uns">Impressum</string>
 
     <!--Tour Strings -->
     <string name="tour_intro_text">Sie stehen vor einem der ältesten romanischen Kirchengebäuden Kölns.<br /> <b>Alt Sankt Alban.</b> <br />Das in Ruinen stehenden Kirchengebäude trägt die Narben der letzten Jahrhunderte und Kriege, welche die Stadt Köln geprägt haben, besonders präsent zur Schau. <br />Kommen sie mit auf eine kleine Zeitreise, welche die Kirche durch ihre Geschichte wiederauferstehen lässt.</string>
@@ -46,6 +37,7 @@
     <string name="tour_starten">Tour erneut starten</string>
     <string name="hauptmen">Hauptmenü</string>
     <string name="empty" />
+    <string name="tour_image">tour image</string>
 
     <string name="stop1"><![CDATA[<b>>></b> Es ist sehr widersprüchlich, dass obwohl St. Alban neben St. Columba die <b>älteste und bevorzugteste Pfarre</b> war, uns von Alt St. Alban kaum Nachrichten überliefert wurden. (Reiners, Heribert 1911)<br /><br />
             Die Ursprünge gehen auf das <b>Jahr 800</b> zurück.]]></string>
@@ -57,7 +49,6 @@
             <b>1507</b> erhielt die Kirche die St. Alban gewidmete Bronzeglocken des Johann von Andernach. Sie war eine von insgesamt vier Glocken der Kirche. Sie trägt den Namen Alban und die Umschrift: <i>„ALBANUS HEISCHEN ICH IND ERE SENT QVIRINS LVIDEN ICH TZO GOTTDIEINST GEBRVCHT MEN MICH BLITZEN IND DONRE STUREN ICH“</i>.]]></string>
     <string name="stop5"><![CDATA[<b>>></b> Im Jahre <b>1633</b> wurde die Kirchenanlage nach Süden erweitert.<br/><br/>
             Von den Jahren <b>1668-1672</b> wurde die Kirche durch den Baumeister Arnold Gülich als Hallenkirche neu gestaltet. Aus diesem Umbau im Mittelalter hat die Kirche ihre heutige Form erhalten. Der Umbau wurde aus Dokumenten übermittelt, in welchen der Rat der Stadt 15.000 Ziegelsteine für den Umbau bewilligten.<br/><br/>
-
             <b>1911</b> wurde der Umbau des Innenraum nach Gülich so beschrieben:<br/><br/>
             „Beim Innern lagen die Verhältnisse für den Architekten, der den gegebenen Bau erweitern sollte, nicht so günstig wie bei St. Columba, und es ist ihm daher auch keine befriedigende Raumlösung gelungen. Da er eine möglichst weite Dehnung erstrebte, konnte er nur wenige Stützen geben. Aber der Gegensatz zum alten Teile ist dabei zu scharf geworden. Das Chor wirkt nun zu schmal und bietet kaum Raum für den Altar. Die ganze Ostpartie scheint zu schwer, und namentlich hier fühlt man, wie sich der Künstler mit dem Räume abmühte. Unschön ist vor allem dabei, wie der Bogen des Chorjoches von der Vierung abgeschnitten wird. Daneben schlug man in einem schmalen Abstand einen zweiten Bogen, den man an der Außenwand auf vorgelegtem Pfeiler lasten ließ. In der südlichen Nebenapsis zerstörte man dadurch deren alten Schluss und schuf gerade hier tote Ecken. Es ist eine verzwickte Bogenanlage, die anscheinend über das Können des Baumeisters Gülich hinausging, denn ein eigener „Bogensteller" trat bei der Konstruktion für ihn ein. Die Gewölbe der Kirche, die allenthalben reich gestaltet sind, befriedigen das Auge nur im Chore ganz, weil sie hier organisch sich darbieten, während sie teilweise sonst mit ihren Rippen in den Flächen verlaufen und zerschnitten werden und dazu in ihrer Verbindung mit den quadratischen Stützen und den zwar reich profilierten aber nüchternen Kapitellen nicht recht passen wollen. Auch dem kuppelartigen Schluss der Vierung ist ein reiches Rippensystem vorgelegt worden. Nordwestlich schiebt sich in den Kirchenraum der Turm, der in seinem unteren Durchgang und der Empore darüber ebenfalls gotisch eingewölbt ist.<br/><br/>
             Quelle: <i>http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN</i>]]></string>
@@ -90,7 +81,5 @@
     <!-- Impressum Strings -->
     <string name="impressum">Impressum</string>
     <string name="impressum_data">Name 1</string>
-
-
 
 </resources>

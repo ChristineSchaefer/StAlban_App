@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author ChristineSchaefer
+
+Layout for tour start view
+click on button start tour
+
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/crba_mfl000453_40">
 
+    <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
         layout="@layout/sta_toolbar"
@@ -12,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- introduction to tour -->
     <TextView
         android:id="@+id/tour_intro"
         android:layout_width="match_parent"
@@ -26,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+    <!-- start tour -->
     <Button
         android:id="@+id/btn_tourstart"
         android:layout_width="142dp"
@@ -38,6 +48,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tour_intro"
         app:layout_constraintVertical_bias="0.569" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

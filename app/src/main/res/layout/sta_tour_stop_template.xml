@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author ChristineSchaefer
+
+Layout-template for tour stops
+
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/header">
 
+    <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
         layout="@layout/sta_toolbar" />
 
+    <!-- allows to scroll through the view -->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -18,12 +25,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+        <!-- allows elements to stand among themselves -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
 
+            <!-- empty textview to fill with different string -->
             <TextView
                 android:id="@+id/stop"
                 android:layout_width="match_parent"
@@ -42,11 +51,21 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.319" />
 
+            <!-- image resource for tour stop -->
+            <ImageView
+                android:id="@+id/tour_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@string/tour_image" />
+
+            <!-- allows buttons to stand next to each other -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <!-- button back -->
                 <Button
                     android:id="@+id/btn_back"
                     style="?android:attr/buttonBarButtonStyle"
@@ -62,6 +81,7 @@
                     app:backgroundTint="@color/white"
                     app:layout_constraintVertical_bias="0.499" />
 
+                <!-- button next -->
                 <Button
                     android:id="@+id/btn_weiter"
                     style="?android:attr/buttonBarButtonStyle"
@@ -74,10 +94,8 @@
                     android:textSize="14sp"
                     app:backgroundTint="@color/white"
                     app:layout_constraintVertical_bias="0.499" />
-            </LinearLayout>
 
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

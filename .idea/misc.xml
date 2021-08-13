@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout-v26/sta_tour_stop_template.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/fragment_first.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/fragment_third.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_custom_dialog.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_full_image_view.xml" value="0.23324275362318841" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_gallery_menu.xml" value="0.24895833333333334" />
@@ -15,6 +20,7 @@
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_end.xml" value="0.33605072463768115" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_start.xml" value="0.33" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_stop_template.xml" value="0.25" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/sta_menu.xml" value="0.24895833333333334" />
       </map>
     </option>

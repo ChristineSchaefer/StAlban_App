@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author ChristineSchaefer
+
+Layout for gallery menu
+buttons for different sub-galleries
+
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
         layout="@layout/sta_toolbar"/>
 
+    <!-- allows to scroll through the menu -->
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- allows buttons to stand among themselves -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,6 +33,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <!-- header gallery -->
             <TextView
                 android:id="@+id/gallery_title"
                 android:layout_width="match_parent"
@@ -35,6 +46,7 @@
                 android:textSize="39sp"
                 app:layout_constraintEnd_toEndOf="parent" />
 
+            <!-- button to sub-gallery past -->
             <Button
                 android:id="@+id/gallery_past"
                 android:layout_width="wrap_content"
@@ -46,6 +58,7 @@
                 android:textSize="17sp"
                 app:layout_constraintEnd_toEndOf="parent" />
 
+            <!-- button to sub-gallery war -->
             <Button
                 android:id="@+id/gallery_war"
                 android:layout_width="wrap_content"
@@ -56,6 +69,7 @@
                 android:textColor="@color/text"
                 android:textSize="17sp" />
 
+            <!-- button to sub-gallery present -->
             <Button
                 android:id="@+id/galery_present"
                 android:layout_width="wrap_content"
@@ -66,6 +80,7 @@
                 android:textColor="@color/text"
                 android:textSize="17sp" />
 
+            <!-- button to sub-gallery art -->
             <Button
                 android:id="@+id/gallery_art"
                 android:layout_width="wrap_content"
@@ -76,9 +91,6 @@
                 android:textColor="@color/text"
                 android:textSize="17sp" />
 
-
         </LinearLayout>
-
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
