@@ -2,9 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- "Mark Favorite", should appear as action button if possible -->
+    <!-- item for the back button -->
 
-    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/backButton"
+        android:icon="@drawable/sta_arrowback"
+        android:title="Zurück"
+        app:showAsAction="always"
+
+        />
+
+    <!-- items for the navigation menu-->
+
     <item android:id="@+id/action_tour"
         android:title="@string/tour"
         app:showAsAction="never"/>
