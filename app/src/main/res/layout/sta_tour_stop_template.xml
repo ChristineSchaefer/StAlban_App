@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 @author ChristineSchaefer
 
 Layout-template for tour stops
@@ -30,7 +29,8 @@ Layout-template for tour stops
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
 
             <!-- empty textview to fill with different string -->
             <TextView
@@ -56,8 +56,8 @@ Layout-template for tour stops
                 android:id="@+id/tour_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@mipmap/ic_launcher_round"
-                android:contentDescription="@string/tour_image" />
+                android:contentDescription="@string/tour_image"
+                android:src="@mipmap/ic_launcher_round" />
 
             <!-- allows buttons to stand next to each other -->
             <LinearLayout

@@ -16,6 +16,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.stalban_app.R;
 import com.example.stalban_app.sta_gallery.StaGalleryActivityMain;
+import com.example.stalban_app.sta_gallery.StaGalleryActivityView;
 import com.example.stalban_app.sta_impressum.StaImActivityMain;
 import com.example.stalban_app.sta_menu.StaMenuActivityMain;
 import com.example.stalban_app.sta_tour.StaTourActivityMain;
@@ -55,6 +56,7 @@ public class StaTimelineActivityMain extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent i;
         switch (item.getItemId()) {
 
             case R.id.backButton:
@@ -74,31 +76,49 @@ public class StaTimelineActivityMain extends AppCompatActivity{
                 startActivity(new Intent(this, StaGalleryActivityMain.class));
 
                 return true;
-            /*
+
             case R.id.action_vorKrieg:
 
-                startActivity(new Intent(this, StaMenuActivityMain.class));
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "before");
+                // start new view
+                startActivity(i);
 
                 return true;
 
             case R.id.action_Krieg:
 
-                startActivity(new Intent(this, StaMenuActivityMain.class));
+                // navigate to another view
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "war");
+                // start new view
+                startActivity(i);
 
                 return true;
 
             case R.id.action_nachKrieg:
 
-                startActivity(new Intent(this, StaMenuActivityMain.class));
+                // navigate to another view
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "after");
+                // start new view
+                startActivity(i);
 
                 return true;
 
             case R.id.action_Kunst:
 
-                startActivity(new Intent(this, StaMenuActivityMain.class));
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "art");
+                // start new view
+                startActivity(i);
 
                 return true;
-    */
+
             case R.id.action_timelaps:
 
                 startActivity(new Intent(this, StaTimelineActivityMain.class));

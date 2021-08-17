@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+@author ChristineSchaefer
+
+Layout for impressum
+
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/drba_d006407">
+    android:background="@color/white">
 
     <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
-        layout="@layout/sta_toolbar"/>
+        layout="@layout/sta_toolbar" />
 
+    <!-- allows to scroll through the view -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,12 +23,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+        <!-- allows elements to stand among themselves -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center|top"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
 
+            <!-- impressum title -->
             <TextView
                 android:id="@+id/impressum_title"
                 android:layout_width="match_parent"
@@ -34,14 +43,50 @@
                 android:textColor="@color/text"
                 android:textSize="39sp" />
 
+            <!-- information about developer -->
             <TextView
-                android:id="@+id/impressum_content"
-                android:layout_width="wrap_content"
+                android:id="@+id/entwicklerinnen"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/impressum_data"
-                android:textColor="@color/white"
-                android:textSize="34sp" />
+                android:padding="12dp"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
 
+            <!-- information about the project -->
+            <TextView
+                android:id="@+id/projektbeschreibung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="12dp"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <!-- more information: github -->
+            <TextView
+                android:id="@+id/informationen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="12dp"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <!-- image with link to github -->
+            <ImageView
+                android:id="@+id/github_repository"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <!-- information about actuality -->
+            <TextView
+                android:id="@+id/aktualität"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:padding="12dp"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>

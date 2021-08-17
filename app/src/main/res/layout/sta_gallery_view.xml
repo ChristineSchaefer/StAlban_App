@@ -48,6 +48,7 @@ Layout-template for sub-galleries
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="100dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <!-- header sub-gallery -->
@@ -67,8 +68,8 @@ Layout-template for sub-galleries
         <!-- empty gridview to fill in with images -->
         <GridView
             android:id="@+id/galleryGrid"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:columnWidth="200dp"
             android:fadingEdge="horizontal"

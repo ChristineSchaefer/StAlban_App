@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.stalban_app.R;
 import com.example.stalban_app.sta_gallery.StaGalleryActivityMain;
+import com.example.stalban_app.sta_gallery.StaGalleryActivityView;
 import com.example.stalban_app.sta_impressum.StaImActivityMain;
 import com.example.stalban_app.sta_menu.StaMenuActivityMain;
 import com.example.stalban_app.sta_timeline.StaTimelineActivityMain;
@@ -54,6 +56,7 @@ public class StaTourActivityStops extends AppCompatActivity {
             0, 0, 0, 0
     };
     // global declaration of needed objects
+    private ScrollView scrollView;
     private TextView tourContent;
     private ImageView tourImage;
     private Button back;
@@ -79,11 +82,29 @@ public class StaTourActivityStops extends AppCompatActivity {
         tourImage = findViewById(R.id.tour_image);
         tourImage.setImageResource(stopImages[1]);
 
-        // change text by pressed button
+        // change text by pressed button and scroll to top of text
         back = findViewById(R.id.btn_back);
-        back.setOnClickListener(v -> showContent(stopStrings, 0));
+        back.setOnClickListener(v -> {
+            showContent(stopStrings, 0);
+            scrollView.scrollTo(0, 0);
+        });
         next = findViewById(R.id.btn_weiter);
-        next.setOnClickListener(v -> showContent(stopStrings, 1));
+        next.setOnClickListener(v -> {
+            showContent(stopStrings, 1);
+            scrollView.scrollTo(0, 0);
+        });
+
+        // allows hiding the toolbar when scrolling through the tour stop to have more screen space available
+        scrollView = findViewById(R.id.scrollView2);
+        scrollView.getViewTreeObserver().addOnScrollChangedListener(
+                () -> {
+                    // when not scrolling, the toolbar is visible
+                    if (scrollView.getChildAt(0).getBottom() <= (scrollView.getHeight() + scrollView.getScrollY())) {
+                        toolbar.setVisibility(View.VISIBLE);
+                    } else {
+                        toolbar.setVisibility(View.GONE);   // when scrolling, the toolbar is invisible
+                    }
+                });
     }
 
     /**
@@ -125,6 +146,12 @@ public class StaTourActivityStops extends AppCompatActivity {
         }
     }
 
+    /**
+     * Method to set toolbar options.
+     *
+     * @param menu toolbar
+     * @return bool
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -132,68 +159,75 @@ public class StaTourActivityStops extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Method to change view by selected toolbar-option.
+     *
+     * @param item pressed button
+     * @return started activity
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent i;
+
+        // use parameter to change activity
         switch (item.getItemId()) {
-
+            // back button
             case R.id.backButton:
-
-                startActivity(new Intent(this, StaTourActivityMain.class));
-
+                startActivity(new Intent(this, StaMenuActivityMain.class));
                 return true;
-
+            // tour
             case R.id.action_tour:
-
                 startActivity(new Intent(this, StaTourActivityMain.class));
-
                 return true;
-
+            // gallery menu
             case R.id.action_galleryMenu:
-
                 startActivity(new Intent(this, StaGalleryActivityMain.class));
-
                 return true;
-            /*
+            // sub gallery before war
             case R.id.action_vorKrieg:
-
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "before");
+                // start new view
+                startActivity(i);
                 return true;
-
+            // sub gallery war
             case R.id.action_Krieg:
-
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-
+                // navigate to another view
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "war");
+                // start new view
+                startActivity(i);
                 return true;
-
+            // sub gallery after war
             case R.id.action_nachKrieg:
-
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-
+                // navigate to another view
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "after");
+                // start new view
+                startActivity(i);
                 return true;
-
+            // sub galley art
             case R.id.action_Kunst:
-
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-
+                i = new Intent(this, StaGalleryActivityView.class);
+                // provides information about the type of gallery
+                i.putExtra("button", "art");
+                // start new view
+                startActivity(i);
                 return true;
-    */
+            // timelapse
             case R.id.action_timelaps:
-
                 startActivity(new Intent(this, StaTimelineActivityMain.class));
-
                 return true;
-
+            // impressum
             case R.id.action_impressum:
-
                 startActivity(new Intent(this, StaImActivityMain.class));
-
                 return true;
-
-
+            // default option
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }
