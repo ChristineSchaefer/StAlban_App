@@ -190,8 +190,6 @@ public class StaGalleryActivityView extends AppCompatActivity {
         return imageIds;
     }
 
-    //TODO
-
     /**
      * Method to change information of shown images in sub-gallery.
      *
@@ -204,13 +202,89 @@ public class StaGalleryActivityView extends AppCompatActivity {
         // use parameter to select images
         switch (button) {
             case "before":
-                imageTitles.add("Bild1");
+                imageTitles.add("Grundriss der Kirche");
+                imageTitles.add("Dekorative Decke des Hauptraumes");
+                imageTitles.add("Einblick in die Kirche");
+                imageTitles.add("Einblick in die Kirche");
+                imageTitles.add("Grundriss des Geländes");
+                imageTitles.add("Ein Blick über die Dächer");
+                imageTitles.add("Ein Blick über die Dächer");
+                imageTitles.add("Bau der Kirche");
+                imageTitles.add("Einblick in die Kirche");
+                imageTitles.add("Einblick in die Kirche");
+                imageTitles.add("Altar");
+                imageTitles.add("Dekorative Decke des Hauptraumes");
+                imageTitles.add("Einblick in den Hauptraum");
+                imageTitles.add("Ein Blick über die Dächer");
+                imageTitles.add("Außenbereich der Kirche");
+                imageTitles.add("Einblick in den Hauptraum");
+                imageTitles.add("Einblick in den Hauptraum");
+                imageTitles.add("Einblick in den Hauptraum");
                 break;
             case "war":
-                imageTitles.add("Bild2");
+                imageTitles.add("Ruine aus Sicht der Martinstr.");
+                imageTitles.add("Ruine von St. Alban");
+                imageTitles.add("Außenmauern der Ruine");
+                imageTitles.add("Zerstörte Außenmauern der Kirche");
+                imageTitles.add("Zerstörte Außenmauern der Kirche");
+                imageTitles.add("Ruine von St. Alban");
+                imageTitles.add("Ruine von St. Alban mit dem Gürzenich");
+                imageTitles.add("Ruine von St. Alban");
+                imageTitles.add("Ein Blick über die Dächer");
+                imageTitles.add("Zerstörter Innenbereich");
+                imageTitles.add("Zerstörter Hauptraum");
+                imageTitles.add("Ein Blick über die Dächer");
+                imageTitles.add("Zerstörtes Dach");
+                imageTitles.add("Zerstörtes Dach");
+                imageTitles.add("Zerstörtes Dach");
+                imageTitles.add("Zerstörte Mauern");
+                imageTitles.add("Zerstörte Mauern");
+                imageTitles.add("Zerstörte Mauern");
+                imageTitles.add("Zerstörte Mauern");
                 break;
             case "after":
-                imageTitles.add("3");
+                imageTitles.add("Instandgesetzte Außenmauern");
+                imageTitles.add("Altar");
+                imageTitles.add("Gebetsbänke");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Gebetsbänke");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Blick in den Kirchenhof");
+                imageTitles.add("Blick in den Kirchenhof");
+                imageTitles.add("Kirchenhof");
+                imageTitles.add("Blick aus dem Gürzenich");
+                imageTitles.add("Altar");
+                imageTitles.add("Gebetsbänke");
+                imageTitles.add("Heiligenstatue");
+                imageTitles.add("Rundbogen mit Tür");
+                imageTitles.add("Künstlerische Elemente des Rundbogens");
+                imageTitles.add("Kirchenhof");
+                imageTitles.add("Wiederaufbau Kirchenhof");
+                imageTitles.add("Kirchenhof");
+                imageTitles.add("Wiederaufbau Kirchenhof");
+                imageTitles.add("Blick über die Dächer");
+                imageTitles.add("Kirche mit Gürzenich");
+                imageTitles.add("Kirche mit Gürzenich");
+                imageTitles.add("Kirche mit Gürzenich");
+                imageTitles.add("Kirche mit Gürzenich");
+                imageTitles.add("Verbindung zwischen Kirche und Gürzenich");
+                imageTitles.add("Zerstörte Mauern Gürzenich");
+                imageTitles.add("Zerstörte Mauern Gürzenich");
+                imageTitles.add("Wiederaufbau");
+                imageTitles.add("Zerstörte Innenräume");
+                imageTitles.add("Zerstörte Innenräume");
+                imageTitles.add("Zerstörte Innenräume");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Außenansicht der Kirchenüberreste");
+                imageTitles.add("Kirchenhof");
+                imageTitles.add("Blick zum Gürzenich aus dem Hof");
+                imageTitles.add("Blick zum Gürzenich aus dem Hof");
+                imageTitles.add("Blick nach oben");
+                imageTitles.add("Wiederaufbau");
+                imageTitles.add("Säule des Daches");
+                imageTitles.add("Säule des Daches");
                 break;
             case "art":
                 imageTitles.add("Grundriss der Kirche");
@@ -245,14 +319,10 @@ public class StaGalleryActivityView extends AppCompatActivity {
         Button btnFull = dialog.findViewById(R.id.btn_full);
         Button btnClose = dialog.findViewById(R.id.btn_close);
 
-        // set title with resource name
-        String title = getResources().getResourceName(item_pos);
+        // set title
+        String title = getImageTitle(item_pos);
 
-        //extracting name from substring
-        int index = title.indexOf("/");
-        String name = title.substring(index + 1);
-
-        imageName.setText(name);
+        imageName.setText(title);
         image.setImageResource(item_pos);
 
         // set onclick-event to button
@@ -387,5 +457,34 @@ public class StaGalleryActivityView extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    /**
+     * Method to get title for selected image.
+     *
+     * @param id of clicked image
+     * @return title of image
+     */
+    public String getImageTitle(Integer id) {
+        // instantiate empty variables
+        String title = "";
+        Integer index = 0;
+
+        // change list with image ids to array to iterate over it
+        Integer[] ids = new Integer[imageIds.size()];
+        imageIds.toArray(ids);
+        for (int i = 0; i < ids.length; i++) {
+            // if id of clicked image is equal with one of the array, the index will be saved
+            if (id == ids[i].intValue()) {
+                index = i;
+            }
+        }
+
+        // get the title from list and used selected index
+        title = imageTitles.get(index);
+        // reset index for next image
+        index = 0;
+
+        return title;
     }
 }

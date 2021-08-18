@@ -9,7 +9,10 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author ChristineSchaefer
@@ -65,4 +68,5 @@ public class StaImageAdapter extends BaseAdapter {
 
         return imageView;
     }
+
 }
