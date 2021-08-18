@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/drawable/sta_arrowback.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout-v21/sta_toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/activity_main.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_custom_dialog.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_full_image_view.xml" value="0.25025641025641027" />
@@ -11,6 +12,7 @@
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_gallery_view.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_imp.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_menu.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_start.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_timeline.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_toolbar.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_toolbar_test.xml" value="0.25416666666666665" />

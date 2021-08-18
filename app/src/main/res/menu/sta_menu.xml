@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+ @author Benedikte Löbbert
+ structure of toolbar menu
+ -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- item for the back button -->
-
-    <item
-        android:id="@+id/backButton"
-        android:icon="@drawable/sta_arrowback"
-        android:title="Zurück"
-        app:showAsAction="always"
-
-        />
 
     <!-- items for the navigation menu-->
 
@@ -25,19 +20,19 @@
         <menu>
             <item
                 android:id="@+id/action_galleryMenu"
-                android:title="Menü"
+                android:title="@string/menuu"
                 app:showAsAction="never"/>
             <item android:id="@+id/action_vorKrieg"
-                android:title="Vor dem Krieg"
+                android:title="@string/st_alban_damals"
                 app:showAsAction="never"/>
             <item android:id="@+id/action_Krieg"
-                android:title="Im Krieg"
+                android:title="@string/kriegsjahre"
                 app:showAsAction="never"/>
             <item android:id="@+id/action_nachKrieg"
-                android:title="Nach dem Krieg"
+                android:title="@string/st_alban_heute"
                 app:showAsAction="never"/>
             <item android:id="@+id/action_Kunst"
-                android:title="In der Kunst"
+                android:title="@string/st_alban_in_der_kunst"
                 app:showAsAction="never"/>
 
         </menu>

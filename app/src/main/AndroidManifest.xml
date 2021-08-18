@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+ @authors ChristineSchaefer, Anna Maria Evers, Benedikte Löbbert
+ -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stalban_app">
 
+    <!-- activities for all fragments -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StAlban_App"
         android:requestLegacyExternalStorage="true">
+        <!-- start activity, app opens here -->
         <activity
             android:name=".sta_start.StaStartActivityMain"
             android:label="St. Alban"
@@ -19,37 +24,55 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- main menu activity -->
         <activity
             android:name=".sta_menu.StaMenuActivityMain"
             android:label="Menu"
-            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_start.StaStartActivityMain">
         </activity>
+        <!-- gallery menu activity -->
         <activity
             android:name=".sta_gallery.StaGalleryActivityMain"
             android:label="Galerie"
-            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_menu.StaMenuActivityMain">
         </activity>
+        <!-- gallery view activity -->
         <activity
             android:name=".sta_gallery.StaGalleryActivityView"
             android:label ="Galerie"
-            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_gallery.StaGalleryActivityMain">
         </activity>
+        <!-- activity for full view of pictures -->
         <activity android:name=".sta_gallery.StaFullView"
-            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_gallery.StaGalleryActivityView"/>
+        <!-- timeline activity -->
         <activity android:name=".sta_timeline.StaTimelineActivityMain"
             android:label="Timeline"
-            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_menu.StaMenuActivityMain"/>
+        <!-- tour ativity -->
         <activity
             android:name=".sta_tour.StaTourActivityMain"
             android:label ="Tour"
-            android:theme="@style/Theme.StAlban_App.NoActionBar">
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_menu.StaMenuActivityMain">
         </activity>
+        <!-- tour stop activity -->
         <activity android:name=".sta_tour.StaTourActivityStops"
-            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_tour.StaTourActivityMain"/>
+        <!-- last tour stop activity -->
         <activity android:name=".sta_tour.StaTourActivityEnd"
-            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_tour.StaTourActivityStops"/>
+        <!-- impressum activity -->
         <activity android:name=".sta_impressum.StaImActivityMain"
-            android:theme="@style/Theme.StAlban_App.NoActionBar"/>
+            android:theme="@style/Theme.StAlban_App.NoActionBar"
+            android:parentActivityName=".sta_menu.StaMenuActivityMain"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

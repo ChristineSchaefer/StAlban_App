@@ -10,7 +10,7 @@
     <string name="st_alban_damals">St. Alban vor dem Krieg</string>
     <string name="st_alban_heute">St. Alban nach dem Krieg</string>
     <string name="startseite">Alt St. Alban</string>
-    <string name="kriegsjahre">kriegsjahre</string>
+    <string name="kriegsjahre">St. Alban im Krieg</string>
     <string name="image">Image</string>
     <string name="galerie">Galerie</string>
     <string name="image_name">Image Name</string>
@@ -20,6 +20,7 @@
 
     <!-- Menu-->
     <string name="menu">Wo soll es hingehen?</string>
+    <string name="menuu">Menü</string>
     <string name="menu_tour">Ich möchte eine Museumstour!</string>
     <string name="menu_gallery">Ich möchte Bilder sehen!</string>
     <string name="menu_time">Ich möchte eine Zeitreise<br /> machen!</string>

@@ -10,13 +10,13 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 
 import com.example.stalban_app.R;
 import com.example.stalban_app.sta_impressum.StaImActivityMain;
-import com.example.stalban_app.sta_menu.StaMenuActivityMain;
 import com.example.stalban_app.sta_timeline.StaTimelineActivityMain;
 import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
@@ -41,6 +41,11 @@ public class StaGalleryActivityMain extends AppCompatActivity {
         // contains a menu for navigation
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // ad up button
+        ActionBar ab = getSupportActionBar();
+        assert ab != null;
+        ab.setDisplayHomeAsUpEnabled(true);
 
         // instantiate button for sub-gallery
         Button galleryBeforeWar = findViewById(R.id.gallery_past);
@@ -117,10 +122,6 @@ public class StaGalleryActivityMain extends AppCompatActivity {
 
         // use parameter to change activity
         switch (item.getItemId()) {
-            // back button
-            case R.id.backButton:
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-                return true;
             // tour
             case R.id.action_tour:
                 startActivity(new Intent(this, StaTourActivityMain.class));

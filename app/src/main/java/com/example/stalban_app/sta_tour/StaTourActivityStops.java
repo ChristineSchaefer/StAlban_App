@@ -15,6 +15,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -75,6 +76,10 @@ public class StaTourActivityStops extends AppCompatActivity {
         // contains a menu for navigation
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // ad up button
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
         // set first tour stop text and image
         tourContent = findViewById(R.id.stop);
@@ -171,10 +176,6 @@ public class StaTourActivityStops extends AppCompatActivity {
 
         // use parameter to change activity
         switch (item.getItemId()) {
-            // back button
-            case R.id.backButton:
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-                return true;
             // tour
             case R.id.action_tour:
                 startActivity(new Intent(this, StaTourActivityMain.class));

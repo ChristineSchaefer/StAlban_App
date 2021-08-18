@@ -21,8 +21,6 @@ public class StaMenuActivityMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_menu);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         /*
         Button Tour
@@ -47,10 +45,8 @@ public class StaMenuActivityMain extends AppCompatActivity {
             startActivity(i);
         });
 
-        /*
-        Button Impressum
-        Hier noch Zielklasse ändern
-         */
+
+        //Button Impressum
         Button im = findViewById(R.id.menu_button_4);
         im.setOnClickListener(v -> {
             Intent i = new Intent(StaMenuActivityMain.this, StaImActivityMain.class);
@@ -59,10 +55,5 @@ public class StaMenuActivityMain extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.sta_menu, menu);
-        return true;
-    }
+
 }

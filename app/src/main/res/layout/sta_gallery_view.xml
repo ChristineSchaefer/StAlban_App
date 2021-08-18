@@ -34,7 +34,7 @@ Layout-template for sub-galleries
             <include
                 android:id="@+id/toolbar"
                 layout="@layout/sta_toolbar"
-                app:layout_constraintTop_toTopOf="parent" />
+                />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 

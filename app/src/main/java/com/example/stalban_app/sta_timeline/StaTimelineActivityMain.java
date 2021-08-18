@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -37,6 +38,11 @@ public class StaTimelineActivityMain extends AppCompatActivity{
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // ad up button
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
         //Listview adapter
         //setListAdapter(new ArrayAdapter<>(this,
           //      android.R.layout.simple_list_item_1,eintrag));
@@ -58,12 +64,6 @@ public class StaTimelineActivityMain extends AppCompatActivity{
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent i;
         switch (item.getItemId()) {
-
-            case R.id.backButton:
-
-                startActivity(new Intent(this, StaMenuActivityMain.class));
-
-                return true;
 
             case R.id.action_tour:
 
