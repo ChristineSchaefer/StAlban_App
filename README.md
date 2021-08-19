@@ -5,9 +5,9 @@ Hierbei bietet die App verschiedene Optionen an: während die <b>Tour</b> umfang
 Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in den unterschiedlichen <b>Galerien</b> angeschaut werden.<br/>
 <b>____________________________________</b>
 
-<b>Entwicklung:</b><br/><br/>
-&nbsp;&nbsp;Anna-Maria Evers, Universität zu Köln<br/><br/>
-&nbsp;&nbsp;Benedikte Löbbert, Universität zu Köln<br/><br/>
+<b>Entwicklung:</b><br/>
+&nbsp;&nbsp;Anna-Maria Evers, Universität zu Köln<br/>
+&nbsp;&nbsp;Benedikte Löbbert, Universität zu Köln<br/>
 &nbsp;&nbsp;Christine Schäfer, Universität zu Köln<br/>
 <b>____________________________________</b>
 
@@ -20,7 +20,7 @@ Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in de
 <b>Verwendete Materialien:</b><br/>
 &nbsp;&nbsp;a.&nbsp;&nbsp;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
 &nbsp;&nbsp;b.&nbsp;&nbsp;Literatur:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
 &nbsp;&nbsp;c.&nbsp;&nbsp;Onlinequellen:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/><br/>
