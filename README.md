@@ -15,7 +15,7 @@ Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in de
 &nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;Entwicklung einer App, die einen historischen Einblick in die Geschichte der St. Alban Kirche ermöglicht<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;b.&nbsp;&nbsp;Benutzerfreundliche und barrierefreie Bedienung<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;c.&nbsp;&nbsp;Einbindung historischer Daten und Bildmaterialen<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;d.&nbsp;&nbsp;Nutzen eines einheitlichen Designs<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;d.&nbsp;&nbsp;Nutzen eines einheitlichen Designs<br/>
 	
 ## Verwendete Materialien:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
@@ -26,11 +26,10 @@ Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/>
 **____________________________________**
 
-##Quickstart<br/>
-Die Anwendung wurde in Java geschrieben.<br/><br/>
-Da die App nicht im Appstore verfügbar ist, muss sie über die Entwicklungsumgebung **[Android Studio](https://developer.android.com/studio )** entweder über den Emulator 
-oder über ein eigenes Endgerät mit Android-Betriebssystem gestartet werden.<br/><br/>
-
+## Quickstart<br/>
+Die Anwendung wurde in Java geschrieben.<br/>
+Da die App nicht im Appstore verfügbar ist, muss sie über die Entwicklungsumgebung [Android Studio](https://developer.android.com/studio) entweder über den Emulator 
+oder über ein eigenes Endgerät mit Android-Betriebssystem gestartet werden.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;Klonen des Repositorys aus Github<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' https://github.com/ChristineSchaefer/StAlban_App.git '<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;b.&nbsp;&nbsp;Öffnen des Projekts in Android Studio<br/>
