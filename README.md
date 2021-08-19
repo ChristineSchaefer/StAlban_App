@@ -6,24 +6,24 @@ Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in de
 <b>____________________________________</b>
 
 <b>Entwicklung:</b><br/><br/>
-&empsAnna-Maria Evers, Universität zu Köln<br/><br/>
-&empsBenedikte Löbbert, Universität zu Köln<br/><br/>
-&empsChristine Schäfer, Universität zu Köln<br/>
+&emps;Anna-Maria Evers, Universität zu Köln<br/><br/>
+&emps;Benedikte Löbbert, Universität zu Köln<br/><br/>
+&emps;Christine Schäfer, Universität zu Köln<br/>
 <b>____________________________________</b>
 
 <b>Ziele:</b><br/>
-&empsa.&empsEntwicklung einer App, die einen historischen Einblick in die Geschichte der St. Alban Kirche ermöglicht<br/>
-&empsb.&empsBenutzerfreundliche und barrierefreie Bedienung<br/>
-&empsc.&empsEinbindung historischer Daten und Bildmaterialen<br/>
-&empsd.&empsNutzen eines einheitlichen Designs<br/><br/>
+&emps;a.&emps;Entwicklung einer App, die einen historischen Einblick in die Geschichte der St. Alban Kirche ermöglicht<br/>
+&emps;b.&emps;Benutzerfreundliche und barrierefreie Bedienung<br/>
+&emps;c.&emps;Einbindung historischer Daten und Bildmaterialen<br/>
+&emps;d.&emps;Nutzen eines einheitlichen Designs<br/><br/>
 	
 <b>Verwendete Materialien:</b><br/>
-&empsa.&empsBildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
-&empsb.&empsLiteratur:<br/>
-&emps&empsReiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
-&empsc.&empsOnlinequellen:<br/>
-&emps&emps http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
-&emps&emps https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/><br/>
+&emps;a.&emps;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
+&emps;b.&emps;Literatur:<br/>
+&emps;&emps;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
+&emps;c.&emps;Onlinequellen:<br/>
+&emps;&emps; http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
+&emps;&emps; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/><br/>
 		
 
 	
