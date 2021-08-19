@@ -6,24 +6,24 @@ Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in de
 <b>____________________________________</b>
 
 <b>Entwicklung:</b><br/><br/>
-&emps;Anna-Maria Evers, Universität zu Köln<br/><br/>
-&emps;Benedikte Löbbert, Universität zu Köln<br/><br/>
-&emps;Christine Schäfer, Universität zu Köln<br/>
+&nbsp;&nbsp;Anna-Maria Evers, Universität zu Köln<br/><br/>
+&nbsp;&nbsp;Benedikte Löbbert, Universität zu Köln<br/><br/>
+&nbsp;&nbsp;Christine Schäfer, Universität zu Köln<br/>
 <b>____________________________________</b>
 
 <b>Ziele:</b><br/>
-&emps;a.&emps;Entwicklung einer App, die einen historischen Einblick in die Geschichte der St. Alban Kirche ermöglicht<br/>
-&emps;b.&emps;Benutzerfreundliche und barrierefreie Bedienung<br/>
-&emps;c.&emps;Einbindung historischer Daten und Bildmaterialen<br/>
-&emps;d.&emps;Nutzen eines einheitlichen Designs<br/><br/>
+&nbsp;&nbsp;a.&nbsp;&nbsp;Entwicklung einer App, die einen historischen Einblick in die Geschichte der St. Alban Kirche ermöglicht<br/>
+&nbsp;&nbsp;b.&nbsp;&nbsp;Benutzerfreundliche und barrierefreie Bedienung<br/>
+&nbsp;&nbsp;c.&nbsp;&nbsp;Einbindung historischer Daten und Bildmaterialen<br/>
+&nbsp;&nbsp;d.&nbsp;&nbsp;Nutzen eines einheitlichen Designs<br/><br/>
 	
 <b>Verwendete Materialien:</b><br/>
-&emps;a.&emps;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
-&emps;b.&emps;Literatur:<br/>
-&emps;&emps;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
-&emps;c.&emps;Onlinequellen:<br/>
-&emps;&emps; http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
-&emps;&emps; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/><br/>
+&nbsp;&nbsp;a.&nbsp;&nbsp;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
+&nbsp;&nbsp;b.&nbsp;&nbsp;Literatur:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
+&nbsp;&nbsp;c.&nbsp;&nbsp;Onlinequellen:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/><br/>
 		
 
 	
