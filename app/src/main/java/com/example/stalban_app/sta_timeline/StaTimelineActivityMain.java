@@ -9,6 +9,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -22,19 +27,17 @@ import com.example.stalban_app.sta_impressum.StaImActivityMain;
 import com.example.stalban_app.sta_menu.StaMenuActivityMain;
 import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
-public class StaTimelineActivityMain extends AppCompatActivity{
-    String[] eintrag = {
-            "Eintrag 1",
-            "Eintrag 2",
-            "Eintrag 3",
-            "Eintrag 4",
-            "Eintrag 5",
-            "Eintrag 6",
-    };
+public class StaTimelineActivityMain extends AppCompatActivity {
+
+    private List<String> mDateList;
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sta_timeline);
+
+        createDateList();
+        bindAdapterToListView();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -43,15 +46,25 @@ public class StaTimelineActivityMain extends AppCompatActivity{
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
 
-        //Listview adapter
-        //setListAdapter(new ArrayAdapter<>(this,
-          //      android.R.layout.simple_list_item_1,eintrag));
     }
-    /*public void onListItemClick(ListView parent, View v,
-                                int position, long id) {
-        Toast.makeText(this, "Ihre Auswahl : " + eintrag[position],
-                Toast.LENGTH_LONG).show();
-    }*/
+
+    private void createDateList() {
+        String[] timelineDates = getResources().getStringArray(R.array.timeline_dates);
+        mDateList = new ArrayList<>(Arrays.asList(timelineDates));
+    }
+
+    private void bindAdapterToListView() {
+        ArrayAdapter<String> dateArrayAdapter =
+                new ArrayAdapter<>(
+                        this, // Die aktuelle Umgebung (diese Activity)
+                        R.layout.sta_timeline_listview, // Die ID des Zeilenlayouts (der XML-Layout Datei)
+                        R.id.date,   // Die ID des TextView-Elements im Zeilenlayout
+                        mDateList); // Daten in der ArrayList
+
+        ListView dateListView = (ListView) findViewById(R.id.listview_sta_timeline);
+        dateListView.setAdapter(dateArrayAdapter);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
