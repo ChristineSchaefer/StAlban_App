@@ -81,8 +81,8 @@
 
     <!-- Impressum Strings -->
     <string name="impressum">Impressum</string>
-    <string name="impressum_projektbeschreibung"><![CDATA[Die <b>St. Alban - App</b> wurde im Rahmen des Hauptseminars "Verarbeitung mehrdimensionaler Daten" der Masterstudiengänge Informationsverarbeitung und Medieninformatik im SS 2021 entwickelt.<br/><br/>
-    Sie beschäftigt sich inhaltlich mit der Ruine der St. Alban in Köln, die während des zweiten Weltkriegs zerstört wurde, und soll einen historischen Einblick in die Geschichte dieser ermöglichen.<br/><br/>
+    <string name="impressum_projektbeschreibung"><![CDATA[Die <b>St. Alban - App</b> wurde im Rahmen des Hauptseminars "Verarbeitung mehrdimensionaler Daten" der Masterstudiengänge Informationsverarbeitung und Medieninformatik der Universität zu Köln im SS 2021 entwickelt.<br/><br/>
+    Sie beschäftigt sich inhaltlich mit der Ruine der St. Alban Kirche in Köln, die während des zweiten Weltkriegs zerstört wurde, und soll einen historischen Einblick in die Geschichte dieser ermöglichen.<br/><br/>
     Hierbei bietet die App verschiedene Optionen an: während die <b>Tour</b> umfangreiche geschichtliche Informationen und Bilder zusammenträgt, ermöglicht die <b>Zeitleiste</b> kurze prägnante Daten zu wichtigen Zeitpunkten in der Geschichte der Kirche.
     Außerdem kann sich Bildmaterial zu verschiedenen historischen Zeitpunkten in den unterschiedlichen <b>Galerien</b> angeschaut werden.<br/><br/>
         <b>____________________________________</b>]]></string>
