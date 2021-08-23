@@ -63,6 +63,7 @@ public class StaTimelineActivityMain extends AppCompatActivity {
 
         ListView dateListView = (ListView) findViewById(R.id.listview_sta_timeline);
         dateListView.setAdapter(dateArrayAdapter);
+        dateListView.setDivider(null);
     }
 
 

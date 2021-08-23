@@ -1,33 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/header"
     tools:context=".sta_timeline.StaTimelineActivityMain">
 
-<!-- contentDescription anpassen in Strings -->
-    <!--<ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="468dp"
-        android:layout_height="196dp"
+    <!-- toolbar with navigation -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:liftOnScroll="true"
+        android:theme="@style/Theme.StAlban_App">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/sta_toolbar"
+                />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- allows views to stand among themselves -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rba_mf043215"
-        android:contentDescription="@string/app_name" />
-            </androidx.constraintlayout.widget.ConstraintLayout>-->
+        android:paddingBottom="100dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/sta_toolbar"/>
 
-    <ListView
+        <!-- header -->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rba_mf043215" />
+
+        <ListView
         android:id="@+id/listview_sta_timeline"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-         />
-</LinearLayout>
+        />
 
-
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

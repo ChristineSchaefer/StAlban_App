@@ -41,10 +41,12 @@
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_stop_template.xml" value="0.25" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/sta_menu.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/circle_view.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/drawable/header_timeline.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/sta_gallery_menu.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/sta_gallery_view.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/sta_imp.xml" value="0.1585144927536232" />
-        <entry key="app/src/main/res/layout/sta_timeline.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/sta_timeline.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sta_timeline_listview.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sta_tour_stop_template.xml" value="0.1585144927536232" />
       </map>

@@ -6,10 +6,14 @@
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/circle_view"
+        android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="16sp"/>
+        android:textSize="24dp" />
 
 </RelativeLayout>
