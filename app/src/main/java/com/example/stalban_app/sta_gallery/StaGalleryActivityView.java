@@ -26,6 +26,7 @@ import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 /**
@@ -53,7 +54,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // ad up button
+        // add up button
         ActionBar ab = getSupportActionBar();
         assert ab != null;
         ab.setDisplayHomeAsUpEnabled(true);
@@ -203,101 +204,25 @@ public class StaGalleryActivityView extends AppCompatActivity {
      */
     public ArrayList<String> changeImagesTitles(String button) {
         ArrayList<String> imageTitles = new ArrayList<>();
-
+        String[] titles;
+        
         // use parameter to select images
         switch (button) {
             case "before":
-                imageTitles.add("Grundriss der Kirche");
-                imageTitles.add("Dekorative Decke des Hauptraumes");
-                imageTitles.add("Einblick in die Kirche");
-                imageTitles.add("Einblick in die Kirche");
-                imageTitles.add("Grundriss des Geländes");
-                imageTitles.add("Ein Blick über die Dächer");
-                imageTitles.add("Ein Blick über die Dächer");
-                imageTitles.add("Bau der Kirche");
-                imageTitles.add("Einblick in die Kirche");
-                imageTitles.add("Einblick in die Kirche");
-                imageTitles.add("Altar");
-                imageTitles.add("Dekorative Decke des Hauptraumes");
-                imageTitles.add("Einblick in den Hauptraum");
-                imageTitles.add("Ein Blick über die Dächer");
-                imageTitles.add("Außenbereich der Kirche");
-                imageTitles.add("Einblick in den Hauptraum");
-                imageTitles.add("Einblick in den Hauptraum");
-                imageTitles.add("Einblick in den Hauptraum");
+                titles = getResources().getStringArray(R.array.before_title);
+                imageTitles = new ArrayList<>(Arrays.asList(titles));
                 break;
             case "war":
-                imageTitles.add("Ruine aus Sicht der Martinstr.");
-                imageTitles.add("Ruine von St. Alban");
-                imageTitles.add("Außenmauern der Ruine");
-                imageTitles.add("Zerstörte Außenmauern der Kirche");
-                imageTitles.add("Zerstörte Außenmauern der Kirche");
-                imageTitles.add("Ruine von St. Alban");
-                imageTitles.add("Ruine von St. Alban mit dem Gürzenich");
-                imageTitles.add("Ruine von St. Alban");
-                imageTitles.add("Ein Blick über die Dächer");
-                imageTitles.add("Zerstörter Innenbereich");
-                imageTitles.add("Zerstörter Hauptraum");
-                imageTitles.add("Ein Blick über die Dächer");
-                imageTitles.add("Zerstörtes Dach");
-                imageTitles.add("Zerstörtes Dach");
-                imageTitles.add("Zerstörtes Dach");
-                imageTitles.add("Zerstörte Mauern");
-                imageTitles.add("Zerstörte Mauern");
-                imageTitles.add("Zerstörte Mauern");
-                imageTitles.add("Zerstörte Mauern");
+                titles = getResources().getStringArray(R.array.war_title);
+                imageTitles = new ArrayList<>(Arrays.asList(titles));
                 break;
             case "after":
-                imageTitles.add("Instandgesetzte Außenmauern");
-                imageTitles.add("Altar");
-                imageTitles.add("Gebetsbänke");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Gebetsbänke");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Blick in den Kirchenhof");
-                imageTitles.add("Blick in den Kirchenhof");
-                imageTitles.add("Kirchenhof");
-                imageTitles.add("Blick aus dem Gürzenich");
-                imageTitles.add("Altar");
-                imageTitles.add("Gebetsbänke");
-                imageTitles.add("Heiligenstatue");
-                imageTitles.add("Rundbogen mit Tür");
-                imageTitles.add("Künstlerische Elemente des Rundbogens");
-                imageTitles.add("Kirchenhof");
-                imageTitles.add("Wiederaufbau Kirchenhof");
-                imageTitles.add("Kirchenhof");
-                imageTitles.add("Wiederaufbau Kirchenhof");
-                imageTitles.add("Blick über die Dächer");
-                imageTitles.add("Kirche mit Gürzenich");
-                imageTitles.add("Kirche mit Gürzenich");
-                imageTitles.add("Kirche mit Gürzenich");
-                imageTitles.add("Kirche mit Gürzenich");
-                imageTitles.add("Verbindung zwischen Kirche und Gürzenich");
-                imageTitles.add("Zerstörte Mauern Gürzenich");
-                imageTitles.add("Zerstörte Mauern Gürzenich");
-                imageTitles.add("Wiederaufbau");
-                imageTitles.add("Zerstörte Innenräume");
-                imageTitles.add("Zerstörte Innenräume");
-                imageTitles.add("Zerstörte Innenräume");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Außenansicht der Kirchenüberreste");
-                imageTitles.add("Kirchenhof");
-                imageTitles.add("Blick zum Gürzenich aus dem Hof");
-                imageTitles.add("Blick zum Gürzenich aus dem Hof");
-                imageTitles.add("Blick nach oben");
-                imageTitles.add("Wiederaufbau");
-                imageTitles.add("Säule des Daches");
-                imageTitles.add("Säule des Daches");
+                titles = getResources().getStringArray(R.array.after_title);
+                imageTitles = new ArrayList<>(Arrays.asList(titles));
                 break;
             case "art":
-                imageTitles.add("Grundriss der Kirche");
-                imageTitles.add("Äußere Ansicht Süd-West-Seite");
-                imageTitles.add("Orgelaltar");
-                imageTitles.add("Seitenflügel");
-                imageTitles.add("Rundbogen");
-                imageTitles.add("Mittelraum");
+                titles = getResources().getStringArray(R.array.art_title);
+                imageTitles = new ArrayList<>(Arrays.asList(titles));
                 break;
             default:
                 Log.e(null, "No Images found.");

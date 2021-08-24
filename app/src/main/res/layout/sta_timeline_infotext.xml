@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/timeline_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timeline_inhalt"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@color/header"/>
+
+    <Button
+        android:id="@+id/btn_close2"
+        android:layout_below="@id/timeline_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="@string/close"
+        android:textColor="@color/header"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -96,4 +96,7 @@
     <string name="impressum_aktualität"><![CDATA[<b>____________________________________</b><br/><br/>
     Dieses Impressum ist auf dem Stand September 2021.]]></string>
 
+    <!-- Timeline Strings -->
+    <string name="timeline_inhalt">Timeline Inhalt</string>
+
 </resources>

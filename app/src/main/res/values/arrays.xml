@@ -53,4 +53,199 @@
         <item>Restaurierung der Kapelle.</item>
         <item>Die St. Alban gewidmete Glocke ist nun als Angelusglocke in St. Gereon zu hören.</item>
     </string-array>
+
+    <!-- Gallery -->
+    <!--<integer-array name="before">
+        <item>@drawable/dkoeln_alt_st_alban_grundriss_1916</item>
+        <item>@drawable/drba_042968</item>
+        <item>@drawable/drba_061928</item>
+        <item>@drawable/drba_061929</item>
+        <item>@drawable/drba_640451</item>
+        <item>@drawable/drba_d006153</item>
+        <item>@drawable/drba_d006407</item>
+        <item>@drawable/drba_mf064822</item>
+        <item>@drawable/drba_mf061928</item>
+        <item>@drawable/drba_mf061929</item>
+        <item>@drawable/drba_mf064823</item>
+        <item>@drawable/drba_mf087244</item>
+        <item>@drawable/drba_mf090187</item>
+        <item>@drawable/drba_mf090890</item>
+        <item>@drawable/drba_mf098819</item>
+        <item>@drawable/drba_mf191554</item>
+        <item>@drawable/drba_mf600987</item>
+        <item>@drawable/drba_mf600988</item>
+    </integer-array>
+
+    <integer-array name="after">
+        <item>@drawable/crba_100284</item>
+        <item>@drawable/crba_115946</item>
+        <item>@drawable/crba_mf074054</item>
+        <item>@drawable/crba_mf091406</item>
+        <item>@drawable/crba_mf091407</item>
+        <item>@drawable/crba_mf091408</item>
+        <item>@drawable/crba_mf074054</item>
+        <item>@drawable/crba_mf100284</item>
+        <item>@drawable/crba_mf100285</item>
+        <item>@drawable/crba_mf100286</item>
+        <item>@drawable/crba_mf100287</item>
+        <item>@drawable/crba_mf104470</item>
+        <item>@drawable/crba_mf115946</item>
+        <item>@drawable/crba_mf115947</item>
+        <item>@drawable/crba_mf115948</item>
+        <item>@drawable/crba_mf115949</item>
+        <item>@drawable/crba_mf115950</item>
+        <item>@drawable/crba_mf133730</item>
+        <item>@drawable/crba_mf133732</item>
+        <item>@drawable/crba_mf133733</item>
+        <item>@drawable/crba_mf133734</item>
+        <item>@drawable/crba_mf137461</item>
+        <item>@drawable/crba_mf631161</item>
+        <item>@drawable/crba_mf631163</item>
+        <item>@drawable/crba_mf631176</item>
+        <item>@drawable/crba_mf631177</item>
+        <item>@drawable/crba_mf631589</item>
+        <item>@drawable/crba_mf631611</item>
+        <item>@drawable/crba_mf631613</item>
+        <item>@drawable/crba_mf631614</item>
+        <item>@drawable/crba_mf631615</item>
+        <item>@drawable/crba_mf631616</item>
+        <item>@drawable/crba_mf631617</item>
+        <item>@drawable/crba_mfl000214_43</item>
+        <item>@drawable/crba_mfl000214_44</item>
+        <item>@drawable/crba_mfl000453_37</item>
+        <item>@drawable/crba_mfl000453_39</item>
+        <item>@drawable/crba_mfl000453_40</item>
+        <item>@drawable/crba_mfl000453_41</item>
+        <item>@drawable/crba_mfl000454_38a</item>
+        <item>@drawable/crba_mfl007513_02</item>
+        <item>@drawable/crba_mfl007513_03</item>
+    </integer-array>
+
+    <integer-array name="war">
+        <item>@drawable/akoeln_altstadt_nord_martinstr_29_31_denkmal_konservator_253e95210_600x450xfr</item>
+        <item>@drawable/akoeln_altstadt_nord_die_ruine_von_st_alban_denkmal_kirche_konservator_4ad597619_600x450xfr</item>
+        <item>@drawable/arba_mf136941</item>
+        <item>@drawable/arba_mf136942</item>
+        <item>@drawable/arba_mf136943</item>
+        <item>@drawable/arba_mf630495</item>
+        <item>@drawable/arba_mf630496</item>
+        <item>@drawable/arba_mfl000454_16a</item>
+        <item>@drawable/arba_mfl000454_36a</item>
+        <item>@drawable/arba_mfl003314_07</item>
+        <item>@drawable/arba_mfl003314_355</item>
+        <item>@drawable/arba_mfl003314_1354</item>
+        <item>@drawable/arba_mfl003314_1356</item>
+        <item>@drawable/arba_mfl003314_1358</item>
+        <item>@drawable/arba_mfl003314_1359</item>
+        <item>@drawable/arba_mfl003314_1457</item>
+        <item>@drawable/arba_mfl003314_1458</item>
+        <item>@drawable/arba_mfl003314_1463</item>
+        <item>@drawable/arba_mfl003314_1464</item>
+    </integer-array>
+
+    <integer-array name="art">
+        <item>@drawable/brba_d048792_kleiner</item>
+        <item>@drawable/brba_d048793_kleiner</item>
+        <item>@drawable/brba_d048794_kleiner</item>
+        <item>@drawable/brba_d048795_kleiner</item>
+        <item>@drawable/brba_d048796_kleiner</item>
+        <item>@drawable/brba_d048797_kleiner</item>
+    </integer-array>
+    -->
+    <string-array name="before_title">
+        <item>Grundriss der Kirche</item>
+        <item>Dekorative Decke des Hauptraumes</item>
+        <item>Einblick in die Kirche</item>
+        <item>Einblick in die Kirche</item>
+        <item>Grundriss des Geländes</item>
+        <item>Ein Blick über die Dächer</item>
+        <item>Ein Blick über die Dächer</item>
+        <item>Bau der Kirche</item>
+        <item>Einblick in die Kirche</item>
+        <item>Einblick in die Kirche</item>
+        <item>Altar</item>
+        <item>Dekorative Decke des Hauptraumes</item>
+        <item>Einblick in den Hauptraum</item>
+        <item>Ein Blick über die Dächer</item>
+        <item>Außenbereich der Kirche</item>
+        <item>Einblick in den Hauptraum</item>
+        <item>Einblick in den Hauptraum</item>
+        <item>Einblick in den Hauptraum</item>
+    </string-array>
+    
+    <string-array name="after_title">
+        <item>Instandgesetzte Außenmauern</item>
+        <item>Altar</item>
+        <item>Gebetsbänke</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Gebetsbänke</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Blick in den Kirchenhof</item>
+        <item>Blick in den Kirchenhof</item>
+        <item>Kirchenhof</item>
+        <item>Blick aus dem Gürzenich</item>
+        <item>Altar</item>
+        <item>Gebetsbänke</item>
+        <item>Heiligenstatue</item>
+        <item>Rundbogen mit Tür</item>
+        <item>Künstlerische Elemente des Rundbogens</item>
+        <item>Kirchenhof</item>
+        <item>Wiederaufbau Kirchenhof</item>
+        <item>Kirchenhof</item>
+        <item>Wiederaufbau Kirchenhof</item>
+        <item>Blick über die Dächer</item>
+        <item>Kirche mit Gürzenich</item>
+        <item>Kirche mit Gürzenich</item>
+        <item>Kirche mit Gürzenich</item>
+        <item>Kirche mit Gürzenich</item>
+        <item>Verbindung zwischen Kirche und Gürzenich</item>
+        <item>Zerstörte Mauern Gürzenich</item>
+        <item>Zerstörte Mauern Gürzenich</item>
+        <item>Wiederaufbau</item>
+        <item>Zerstörte Innenräume</item>
+        <item>Zerstörte Innenräume</item>
+        <item>Zerstörte Innenräume</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Außenansicht der Kirchenüberreste</item>
+        <item>Kirchenhof</item>
+        <item>Blick zum Gürzenich aus dem Hof</item>
+        <item>Blick zum Gürzenich aus dem Hof</item>
+        <item>Blick nach oben</item>
+        <item>Wiederaufbau</item>
+        <item>Säule des Daches</item>
+        <item>Säule des Daches</item>
+    </string-array>
+    
+    <string-array name="war_title">
+        <item>Ruine aus Sicht der Martinstr.</item>
+        <item>Ruine von St. Alban</item>
+        <item>Außenmauern der Ruine</item>
+        <item>Zerstörte Außenmauern der Kirche</item>
+        <item>Zerstörte Außenmauern der Kirche</item>
+        <item>Ruine von St. Alban</item>
+        <item>Ruine von St. Alban mit dem Gürzenich</item>
+        <item>Ruine von St. Alban</item>
+        <item>Ein Blick über die Dächer</item>
+        <item>Zerstörter Innenbereich</item>
+        <item>Zerstörter Hauptraum</item>
+        <item>Ein Blick über die Dächer</item>
+        <item>Zerstörtes Dach</item>
+        <item>Zerstörtes Dach</item>
+        <item>Zerstörtes Dach</item>
+        <item>Zerstörte Mauern</item>
+        <item>Zerstörte Mauern</item>
+        <item>Zerstörte Mauern</item>
+        <item>Zerstörte Mauern</item>
+    </string-array>
+    
+    <string-array name="art_title">
+        <item>Grundriss der Kirche</item>
+        <item>Äußere Ansicht Süd-West-Seite</item>
+        <item>Orgelaltar</item>
+        <item>Seitenflügel</item>
+        <item>Rundbogen</item>
+        <item>Mittelraum</item>
+    </string-array>
 </resources>
