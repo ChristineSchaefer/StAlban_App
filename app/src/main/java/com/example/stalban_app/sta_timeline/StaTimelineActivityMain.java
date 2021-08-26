@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.view.WindowManager;
+import android.view.Gravity;
 import android.widget.Toast;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -116,6 +118,12 @@ public class StaTimelineActivityMain extends AppCompatActivity {
         btnClose.setOnClickListener(v -> dialog.dismiss());
 
         dialog.show();
+        //WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        //layoutParams.copyFrom(dialog.getWindow().getAttributes());
+        //layoutParams.gravity = Gravity.BOTTOM;
+        //layoutParams.width = 600;
+        //layoutParams.height = 280;
+        //dialog.getWindow().setAttributes(layoutParams);
     }
 
     @Override

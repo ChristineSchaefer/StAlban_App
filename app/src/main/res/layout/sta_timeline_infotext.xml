@@ -5,22 +5,26 @@
     android:layout_gravity="center"
     android:layout_margin="2dp">
 
+
     <TextView
         android:id="@+id/timeline_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/timeline_inhalt"
         android:gravity="center"
         android:textSize="24sp"
         android:textColor="@color/white"
-        android:background="@color/header"/>
+        android:background="@color/grey"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
 
     <Button
         android:id="@+id/btn_close2"
         android:layout_below="@id/timeline_content"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="54dp"
         android:text="@string/close"
         android:textColor="@color/header"
         android:textSize="14sp"

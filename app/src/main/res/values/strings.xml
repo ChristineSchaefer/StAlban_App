@@ -17,14 +17,14 @@
     <string name="image_name">Image Name</string>
     <string name="full_view">Full View</string>
     <string name="image_to_show">image to show</string>
-    <string name="close">Close</string>
+    <string name="close">Schließen</string>
 
     <!-- Menu-->
     <string name="menu">Wo soll es hingehen?</string>
     <string name="menuu">Menü</string>
-    <string name="menu_tour">Ich möchte eine Museumstour!</string>
+    <string name="menu_tour">Ich möchte eine Tour!</string>
     <string name="menu_gallery">Ich möchte Bilder sehen!</string>
-    <string name="menu_time">Ich möchte eine Zeitreise<br /> machen!</string>
+    <string name="menu_time">Ich möchte zum Zeitstrahl!</string>
     <string name="tour">Tour</string>
     <string name="zeitstrahl">Zeitstrahl</string>
     <string name="ber_uns">Impressum</string>
@@ -53,7 +53,7 @@
             Von den Jahren <b>1668-1672</b> wurde die Kirche durch den Baumeister Arnold Gülich als Hallenkirche neu gestaltet. Aus diesem Umbau im Mittelalter hat die Kirche ihre heutige Form erhalten. Der Umbau wurde aus Dokumenten übermittelt, in welchen der Rat der Stadt 15.000 Ziegelsteine für den Umbau bewilligten.<br/><br/>
             <b>1911</b> wurde der Umbau des Innenraum nach Gülich so beschrieben:<br/><br/>
             „Beim Innern lagen die Verhältnisse für den Architekten, der den gegebenen Bau erweitern sollte, nicht so günstig wie bei St. Columba, und es ist ihm daher auch keine befriedigende Raumlösung gelungen. Da er eine möglichst weite Dehnung erstrebte, konnte er nur wenige Stützen geben. Aber der Gegensatz zum alten Teile ist dabei zu scharf geworden. Das Chor wirkt nun zu schmal und bietet kaum Raum für den Altar. Die ganze Ostpartie scheint zu schwer, und namentlich hier fühlt man, wie sich der Künstler mit dem Räume abmühte. Unschön ist vor allem dabei, wie der Bogen des Chorjoches von der Vierung abgeschnitten wird. Daneben schlug man in einem schmalen Abstand einen zweiten Bogen, den man an der Außenwand auf vorgelegtem Pfeiler lasten ließ. In der südlichen Nebenapsis zerstörte man dadurch deren alten Schluss und schuf gerade hier tote Ecken. Es ist eine verzwickte Bogenanlage, die anscheinend über das Können des Baumeisters Gülich hinausging, denn ein eigener „Bogensteller" trat bei der Konstruktion für ihn ein. Die Gewölbe der Kirche, die allenthalben reich gestaltet sind, befriedigen das Auge nur im Chore ganz, weil sie hier organisch sich darbieten, während sie teilweise sonst mit ihren Rippen in den Flächen verlaufen und zerschnitten werden und dazu in ihrer Verbindung mit den quadratischen Stützen und den zwar reich profilierten aber nüchternen Kapitellen nicht recht passen wollen. Auch dem kuppelartigen Schluss der Vierung ist ein reiches Rippensystem vorgelegt worden. Nordwestlich schiebt sich in den Kirchenraum der Turm, der in seinem unteren Durchgang und der Empore darüber ebenfalls gotisch eingewölbt ist.<br/><br/>
-            Quelle: <i>http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN</i>]]></string>
+            ]]></string>
     <string name="stop6"><![CDATA[<b>>></b> Es folgten weitere dokumentierte Umbauten und Reparaturen, von denen leider wenig übermittelt ist.
             <b>1776</b> wurde die Kirche in Teilen von Mitteln der Familie de Groote erneuert.<br/><br/>
             <b>1826</b> Reparaturen wurden an der Kirche durchgeführt.<br/><br/>
@@ -97,6 +97,6 @@
     Dieses Impressum ist auf dem Stand September 2021.]]></string>
 
     <!-- Timeline Strings -->
-    <string name="timeline_inhalt">Timeline Inhalt</string>
+    <string name="timeline_inhalt">In diesem Jahr...</string>
 
 </resources>
