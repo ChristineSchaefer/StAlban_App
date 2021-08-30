@@ -10,8 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:layout_margin="2dp"
-    android:background="@color/header">
+    android:layout_margin="2dp">
 
     <!-- image title -->
     <TextView
@@ -19,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/image_name"
+        android:background="@color/grey"
         android:gravity="center"
         android:textSize="20sp"
         android:textColor="@color/white"/>
@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/full_view"
-            android:textColor="@color/white" />
+            android:textColor="@color/header" />
 
         <!-- button to close dialog box -->
         <Button
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/close"
-            android:textColor="@color/white" />
+            android:textColor="@color/header" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -205,7 +205,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
     public ArrayList<String> changeImagesTitles(String button) {
         ArrayList<String> imageTitles = new ArrayList<>();
         String[] titles;
-        
+
         // use parameter to select images
         switch (button) {
             case "before":
