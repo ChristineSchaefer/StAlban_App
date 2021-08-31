@@ -13,6 +13,7 @@
         <item>1633</item>
         <item>1668</item>
         <item>1776</item>
+        <item>1826</item>
         <item>1832</item>
         <item>1838</item>
         <item>1847</item>
@@ -31,30 +32,30 @@
 
     <!-- String with the content -->
     <string-array name="timeline_content">
-        <item>wurde der Name St. Alban wird erstmals in einer Urkunde erwähnt.</item>
-        <item>wurde Die Kirche wird erstmals als Pfarrkirche aufgeführt.</item>
-        <item>spendete Joseph von Arwilre Geld, welches für den Turmbau deponiert wird.</item>
-        <item>wütete die Pest in Europa, die vielen Toten waren zu viel für das Kirchengrundstück und wurden außerhalb begraben.</item>
-        <item>war die Erbauung des Kirchenturms.</item>
-        <item>erhielt die Kirche eine ihr gewidmete Bronze Kirchenglocke.</item>
-        <item>wurde die Kirchenanlage nach Süden hin erweitert.</item>
-        <item>bis 1672 wurde Die Kirche durch Baumeister Arnold Gülich als Hallenkirche neugestaltet.</item>
-        <item>gab es eine Erneuerung der Kirche.</item>
-        <item>fanden Reparaturen an der Kirche statt.</item>
-        <item>fanden Reparaturen an der Kirche statt.</item>
-        <item>endet die Spur der Aquarelle aus dem Innenraum von St. Alban, welche vermutlich aus diesem Jahr stammen.</item>
-        <item>fertig Anton Ramboux auf einer Rundreise Skizzen vom Innenraum in seinem Skizzenbuch an.</item>
-        <item>erfolgt eine Instandsetzung des Turms und die Umgestaltung der Fassade zu der heutigen Optik.</item>
-        <item>wurde die Grundrisszeichnung, welche Aufschluss über die ehemaligen Gewölbe von St. Alban gibt, angefertigt.</item>
-        <item>und über den Zeitraum des Zweiten Weltkrieges wurde die Kirche mehrfach von Bomben getroffen.</item>
-        <item>wurden drei von vier Glocken von St. Alban von den Nationalsozialisten abgehangen und beschlagnahmt.</item>
-        <item>war die Kirche nach dem Zweiten Weltkrieg nur noch eine Ruine, lediglich ein Teil des Turmes und die Außenmauern standen noch.</item>
-        <item>wurde das Grundstück von St. Alban bei der Stadt gegen ein neues Grundstück eingetauscht.</item>
-        <item>startete die Erbauung von Neu St. Alban in Neustadt-Nord.</item>
-        <item>erfolgte die Fertigstellung der Sankt Bruder-Konrad-Kapelle im Erdgeschoss vom Turm (Neu St. Alban)</item>
-        <item>fand die Weihung der Sankt Bruder-Konrad-Kapelle statt.</item>
-        <item>erfolgte eine Restaurierung der Kapelle.</item>
-        <item>war zum ersten Mal wieder die St. Alban gewidmete Glocke als Angelusglocke in St. Gereon zu hören.</item>
+        <item>1172 der Name St. Alban wird erstmals in einer Urkunde erwähnt.</item>
+        <item>1176 wurde Die Kirche wird erstmals als Pfarrkirche aufgeführt.</item>
+        <item>1323 spendete Joseph von Arwilre Geld, welches für den Turmbau deponiert wird.</item>
+        <item>1451 wütete die Pest in Europa, die vielen Toten waren zu viel für das Kirchengrundstück und wurden außerhalb begraben.</item>
+        <item>1494 war die Erbauung des Kirchenturms.</item>
+        <item>1507 erhielt die Kirche eine ihr gewidmete Bronze Kirchenglocke.</item>
+        <item>1633 wurde die Kirchenanlage nach Süden hin erweitert.</item>
+        <item>1668 bis 1672 wurde Die Kirche durch Baumeister Arnold Gülich als Hallenkirche neugestaltet.</item>
+        <item>1776 gab es eine Erneuerung der Kirche.</item>
+        <item>1826 fanden Reparaturen an der Kirche statt.</item>
+        <item>1832 fanden Reparaturen an der Kirche statt.</item>
+        <item>1838 endet die Spur der Aquarelle aus dem Innenraum von St. Alban, welche vermutlich aus diesem Jahr stammen.</item>
+        <item>1847 fertig Anton Ramboux auf einer Rundreise Skizzen vom Innenraum in seinem Skizzenbuch an.</item>
+        <item>1895-1896 erfolgt eine Instandsetzung des Turms und die Umgestaltung der Fassade zu der heutigen Optik.</item>
+        <item>1916 wurde die Grundrisszeichnung, welche Aufschluss über die ehemaligen Gewölbe von St. Alban gibt, angefertigt.</item>
+        <item>1939 - 1945 und über den Zeitraum des Zweiten Weltkrieges wurde die Kirche mehrfach von Bomben getroffen.</item>
+        <item>1943 wurden drei von vier Glocken von St. Alban von den Nationalsozialisten abgehangen und beschlagnahmt.</item>
+        <item>1945 war die Kirche nach dem Zweiten Weltkrieg nur noch eine Ruine, lediglich ein Teil des Turmes und die Außenmauern standen noch.</item>
+        <item>1954 wurde das Grundstück von St. Alban bei der Stadt gegen ein neues Grundstück eingetauscht.</item>
+        <item>1958 - 1959 startete die Erbauung von Neu St. Alban in Neustadt-Nord.</item>
+        <item>1960 erfolgte die Fertigstellung der Sankt Bruder-Konrad-Kapelle im Erdgeschoss vom Turm (Neu St. Alban)</item>
+        <item>1964 fand die Weihung der Sankt Bruder-Konrad-Kapelle statt.</item>
+        <item>2007 erfolgte eine Restaurierung der Kapelle.</item>
+        <item>2008 war zum ersten Mal wieder die St. Alban gewidmete Glocke als Angelusglocke in St. Gereon zu hören.</item>
     </string-array>
 
     <!-- Gallery -->
