@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Timeline Strings -->
+
+    <!-- String with the dates -->
     <string-array name="timeline_dates">
         <item>1172</item>
         <item>1176</item>
@@ -27,6 +29,7 @@
         <item>2008</item>
     </string-array>
 
+    <!-- String with the content -->
     <string-array name="timeline_content">
         <item>wurde der Name St. Alban wird erstmals in einer Urkunde erwähnt.</item>
         <item>wurde Die Kirche wird erstmals als Pfarrkirche aufgeführt.</item>

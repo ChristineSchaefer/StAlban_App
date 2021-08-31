@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author Anna-Maria Evers
+
+Layout for the Timeline
+-->
+
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -58,6 +64,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/rba_mf043215" />
 
+
+        <!-- ListView is created here and styled in sta_timeline_listview.xml -->
         <ListView
         android:id="@+id/listview_sta_timeline"
         android:layout_width="match_parent"

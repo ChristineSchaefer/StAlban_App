@@ -35,6 +35,13 @@ import com.example.stalban_app.sta_tour.StaTourActivityMain;
 
 import org.w3c.dom.Text;
 
+/**
+ * @author Anna-Maria Evers
+ * <p>
+ * Activity to load the years from the string array "timeline_dates" into the timeline
+ * and to output the appropriate information from the string array "timeline_content" in a dialog with an onclick.
+ */
+
 public class StaTimelineActivityMain extends AppCompatActivity {
 
     private List<String> mDateList;
@@ -46,23 +53,22 @@ public class StaTimelineActivityMain extends AppCompatActivity {
         setContentView(R.layout.sta_timeline);
 
         createDateList();
-        //bindAdapterToListView();
         createContentList();
 
-        // das hier ist der Inhalt der bindAdapterToListView Methode
-        // hier aufgelistet, damit der ListView ein onclick event hinzugefügt werden kann
+
+        // Array Adapter to set the dates from the Array timeline_dates into the Listview Element
         ArrayAdapter<String> dateArrayAdapter =
                 new ArrayAdapter<>(
-                        this, // Die aktuelle Umgebung (diese Activity)
-                        R.layout.sta_timeline_listview, // Die ID des Zeilenlayouts (der XML-Layout Datei)
-                        R.id.date,   // Die ID des TextView-Elements im Zeilenlayout
-                        mDateList); // Daten in der ArrayList
+                        this,
+                        R.layout.sta_timeline_listview, // the id from the layout file
+                        R.id.date,   // the id from the textview in the layout file
+                        mDateList); // Dates from the ArrayList
 
         ListView dateListView = (ListView) findViewById(R.id.listview_sta_timeline);
         dateListView.setAdapter(dateArrayAdapter);
         dateListView.setDivider(null);
 
-        // das hier ist der neue Teil
+        // OnClickListener for Alert Dialog with information from the string array "timeline_content"
         dateListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -89,28 +95,16 @@ public class StaTimelineActivityMain extends AppCompatActivity {
         mContentList = new ArrayList<>(Arrays.asList(timelineContent));
     }
 
-    //diese Methode würde wegfallen, da Inhalt schon bei onCreate drin ist
-    private void bindAdapterToListView() {
-        ArrayAdapter<String> dateArrayAdapter =
-                new ArrayAdapter<>(
-                        this, // Die aktuelle Umgebung (diese Activity)
-                        R.layout.sta_timeline_listview, // Die ID des Zeilenlayouts (der XML-Layout Datei)
-                        R.id.date,   // Die ID des TextView-Elements im Zeilenlayout
-                        mDateList); // Daten in der ArrayList
 
-        ListView dateListView = (ListView) findViewById(R.id.listview_sta_timeline);
-        dateListView.setAdapter(dateArrayAdapter);
-        dateListView.setDivider(null);
-    }
-
-    // hier wird der Dialog geöffnet anhand des Parameters, der Parameter ist der Index des gedrückten Datums
+    // here opens the dialog based on the parameter
+    // the parameter is the index of the pressed date
     public void showTimelineContent(int position){
 
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.sta_timeline_infotext);
 
         TextView content = dialog.findViewById(R.id.timeline_content);
-        // hier wird dann der Inhalt beim gleichen Inhalt in der anderen Liste herausgesucht
+        // search for the content based on the parameter
         String actualContent = mContentList.get(position);
         content.setText(actualContent);
 

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author Anna-Maria Evers
+
+Layout for Listview with the dates
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/header">
 
+    <!-- Circle with Date created by Listview Element -->
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"

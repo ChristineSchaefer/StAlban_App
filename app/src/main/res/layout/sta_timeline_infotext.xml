@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+@author Anna-Maria Evers
+
+Layout for the Alert Dialog with the content
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:layout_margin="2dp">
 
-
+    <!-- Textview for the content from string-array "timeline_content" -->
     <TextView
         android:id="@+id/timeline_content"
         android:layout_width="match_parent"
@@ -19,6 +25,7 @@
         android:paddingTop="20dp"
         android:paddingBottom="20dp"/>
 
+    <!-- Close Button -->
     <Button
         android:id="@+id/btn_close2"
         android:layout_below="@id/timeline_content"
