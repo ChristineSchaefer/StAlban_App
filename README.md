@@ -20,10 +20,10 @@ Christine Schäfer, Universität zu Köln<br/>
 ## Verwendete Materialien<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;a.&nbsp;&nbsp;Bildmaterial: Rheinisches Bildarchiv Köln (RBA)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;b.&nbsp;&nbsp;Literatur:<br/>
-Kier, Hiltrud und Esch, Hans Georg. 2000. Kirchen in Köln. Köln: Bachem. <br/>
-Poth, Hugo.1978. St. Alban. Köln.<br/>
-Pfotenhauer, Angela. 1993. Köln: Der Gürzenich und Alt St. Alban. Köln: Bachem.
-Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kier, Hiltrud und Esch, Hans Georg. 2000. Kirchen in Köln. Köln: Bachem. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pfotenhauer, Angela. 1993. Köln: Der Gürzenich und Alt St. Alban. Köln: Bachem.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poth, Hugo.1978. St. Alban. Köln.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reiners, Heribert (1911): Kölner Kirchen. J.P. Bachem Köln.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;c.&nbsp;&nbsp;Onlinequellen:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.lexikus.de/bibliothek/Koelner-Kirchen-ST-ALBAN <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.stadt-koeln.de/leben-in-koeln/kultur/rheinisches-bildarchiv/ <br/>
