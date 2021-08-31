@@ -11,7 +11,28 @@
     android:layout_height="match_parent"
     android:background="@drawable/rba_menu_background">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <!-- header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/men__headline"
+        android:gravity="center"
+        android:text="@string/menu"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="39sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,21 +43,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
-
-            <!-- header -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men__headline"
-                android:gravity="center"
-                android:text="@string/menu"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:textSize="39sp"
-                app:layout_constraintBottom_toBottomOf="@+id/view2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/view2"
-                app:layout_constraintTop_toTopOf="@+id/view2" />
 
             <!-- menu buttons -->
             <Button
@@ -94,6 +100,7 @@
         </LinearLayout>
 
     </ScrollView>
+    </LinearLayout>
 
 
 

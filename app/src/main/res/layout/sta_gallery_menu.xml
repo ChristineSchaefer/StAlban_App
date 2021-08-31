@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 @author ChristineSchaefer
 
 Layout for gallery menu
@@ -9,88 +8,93 @@ buttons for different sub-galleries
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/sta_background_gallery_menu">
 
     <!-- toolbar with navigation -->
     <include
         android:id="@+id/toolbar"
-        layout="@layout/sta_toolbar"/>
+        layout="@layout/sta_toolbar" />
 
-    <!-- allows to scroll through the menu -->
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- allows buttons to stand among themselves -->
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <!-- header gallery -->
+        <TextView
+            android:id="@+id/gallery_title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/sta_background_gallery_menu"
+            android:background="@drawable/men__headline"
             android:gravity="center"
-            android:orientation="vertical">
+            android:text="@string/galerie"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="39sp" />
 
-            <!-- header gallery -->
-            <TextView
-                android:id="@+id/gallery_title"
+        <!-- allows to scroll through the menu -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- allows buttons to stand among themselves -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men__headline"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/galerie"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:textSize="39sp"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:orientation="vertical">
 
-            <!-- button to sub-gallery past -->
-            <Button
-                android:id="@+id/gallery_past"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:background="@drawable/rechteck_2"
-                android:text="@string/st_alban_damals"
-                android:textColor="@color/text"
-                android:textSize="17sp"
-                app:layout_constraintEnd_toEndOf="parent" />
+                <!-- button to sub-gallery past -->
+                <Button
+                    android:id="@+id/gallery_past"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/rechteck_2"
+                    android:text="@string/st_alban_damals"
+                    android:textColor="@color/text"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-            <!-- button to sub-gallery war -->
-            <Button
-                android:id="@+id/gallery_war"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/rechteck_2"
-                android:text="@string/kriegsjahre"
-                android:textColor="@color/text"
-                android:textSize="17sp" />
+                <!-- button to sub-gallery war -->
+                <Button
+                    android:id="@+id/gallery_war"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rechteck_2"
+                    android:text="@string/kriegsjahre"
+                    android:textColor="@color/text"
+                    android:textSize="17sp" />
 
-            <!-- button to sub-gallery present -->
-            <Button
-                android:id="@+id/galery_present"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/rechteck_2"
-                android:text="@string/st_alban_heute"
-                android:textColor="@color/text"
-                android:textSize="17sp" />
+                <!-- button to sub-gallery present -->
+                <Button
+                    android:id="@+id/galery_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rechteck_2"
+                    android:text="@string/st_alban_heute"
+                    android:textColor="@color/text"
+                    android:textSize="17sp" />
 
-            <!-- button to sub-gallery art -->
-            <Button
-                android:id="@+id/gallery_art"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/rechteck_2"
-                android:text="@string/st_alban_in_der_kunst"
-                android:textColor="@color/text"
-                android:textSize="17sp" />
+                <!-- button to sub-gallery art -->
+                <Button
+                    android:id="@+id/gallery_art"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rechteck_2"
+                    android:text="@string/st_alban_in_der_kunst"
+                    android:textColor="@color/text"
+                    android:textSize="17sp" />
 
-        </LinearLayout>
-    </ScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

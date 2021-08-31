@@ -2,6 +2,7 @@ package com.example.stalban_app.sta_gallery;
 
 // imports
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -323,6 +324,7 @@ public class StaGalleryActivityView extends AppCompatActivity {
      * @param item pressed button
      * @return started activity
      */
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent i;
@@ -393,8 +395,8 @@ public class StaGalleryActivityView extends AppCompatActivity {
      */
     public String getImageTitle(Integer id) {
         // instantiate empty variables
-        String title = "";
-        Integer index = 0;
+        String title;
+        int index = 0;
 
         // change list with image ids to array to iterate over it
         Integer[] ids = new Integer[imageIds.size()];
