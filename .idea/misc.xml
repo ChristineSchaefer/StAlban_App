@@ -21,6 +21,8 @@
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/layout/sta_tour_stop_template.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/menu/menu_main.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Benedikte/Documents/GIT/St Alban/StAlban_App/app/src/main/res/menu/sta_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/drawable/circle_view.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/font/secular_one.xml" value="0.396875" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout-v26/sta_tour_stop_template.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
@@ -34,13 +36,17 @@
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_gallery_view.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_imp.xml" value="0.35144927536231885" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_menu.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_start.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_timeline.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_timeline_infotext.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_toolbar.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_end.xml" value="0.33605072463768115" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_start.xml" value="0.33" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/layout/sta_tour_stop_template.xml" value="0.25" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/menu/sta_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/mipmap-anydpi-v26/sta_app_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/Christine/AndroidStudioProjects/StAlban_App/app/src/main/res/mipmap-anydpi-v26/sta_app_icon_round.xml" value="0.3828125" />
         <entry key="app/src/main/res/drawable/circle_view.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/drawable/header_timeline.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/drawable/info_background.xml" value="0.1109375" />
