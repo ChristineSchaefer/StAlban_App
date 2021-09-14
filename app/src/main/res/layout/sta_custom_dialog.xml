@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/full_view"
-            android:textColor="@color/header" />
+            android:textColor="@color/text" />
 
         <!-- button to close dialog box -->
         <Button
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/close"
-            android:textColor="@color/header" />
+            android:textColor="@color/text" />
 
     </LinearLayout>
 </RelativeLayout>
